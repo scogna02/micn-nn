@@ -148,8 +148,8 @@ class Model(nn.Module):
                 requires_grad=True)
         if self.task_name == 'imputation':
             self.projection = nn.Linear(configs.d_model, configs.c_out, bias=True)
-        if self.task_name == 'anomaly_detection':
-            self.projection = nn.Linear(configs.d_model, configs.c_out, bias=True)
+        #if self.task_name == 'anomaly_detection':
+            #self.projection = nn.Linear(configs.d_model, configs.c_out, bias=True)
         if self.task_name == 'classification':
             self.act = F.gelu
             self.dropout = nn.Dropout(configs.dropout)
@@ -178,7 +178,7 @@ class Model(nn.Module):
         dec_out = dec_out + trend
         return dec_out
 
-    def anomaly_detection(self, x_enc):
+    """def anomaly_detection(self, x_enc):
         # Multi-scale Hybrid Decomposition
         seasonal_init_enc, trend = self.decomp_multi(x_enc)
 
@@ -186,7 +186,7 @@ class Model(nn.Module):
         dec_out = self.dec_embedding(seasonal_init_enc, None)
         dec_out = self.conv_trans(dec_out)
         dec_out = dec_out + trend
-        return dec_out
+        return dec_out"""
 
     def classification(self, x_enc, x_mark_enc):
         # Multi-scale Hybrid Decomposition
@@ -212,9 +212,9 @@ class Model(nn.Module):
             dec_out = self.imputation(
                 x_enc, x_mark_enc, x_dec, x_mark_dec, mask)
             return dec_out  # [B, L, D]
-        if self.task_name == 'anomaly_detection':
-            dec_out = self.anomaly_detection(x_enc)
-            return dec_out  # [B, L, D]
+        #if self.task_name == 'anomaly_detection':
+        #    dec_out = self.anomaly_detection(x_enc)
+        #    return dec_out  # [B, L, D]
         if self.task_name == 'classification':
             dec_out = self.classification(x_enc, x_mark_enc)
             return dec_out  # [B, N]
