@@ -148,9 +148,7 @@ class Model(nn.Module):
                 requires_grad=True)
         if self.task_name == 'imputation':
             self.projection = nn.Linear(configs.d_model, configs.c_out, bias=True)
-        #if self.task_name == 'anomaly_detection':
-            #self.projection = nn.Linear(configs.d_model, configs.c_out, bias=True)
-            
+
      
     def forecast(self, x_enc, x_mark_enc, x_dec, x_mark_dec):
         # Multi-scale Hybrid Decomposition
@@ -174,16 +172,6 @@ class Model(nn.Module):
         dec_out = self.conv_trans(dec_out)
         dec_out = dec_out + trend
         return dec_out
-
-    """def anomaly_detection(self, x_enc):
-        # Multi-scale Hybrid Decomposition
-        seasonal_init_enc, trend = self.decomp_multi(x_enc)
-
-        # embedding
-        dec_out = self.dec_embedding(seasonal_init_enc, None)
-        dec_out = self.conv_trans(dec_out)
-        dec_out = dec_out + trend
-        return dec_out"""
 
     def forward(self, x_enc, x_mark_enc, x_dec, x_mark_dec, mask=None):
         if self.task_name == 'long_term_forecast' or self.task_name == 'short_term_forecast':
