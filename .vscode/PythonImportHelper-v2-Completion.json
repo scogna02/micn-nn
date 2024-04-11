@@ -190,22 +190,6 @@
         "documentation": {}
     },
     {
-        "label": "optim",
-        "importPath": "torch",
-        "description": "torch",
-        "isExtraImport": true,
-        "detail": "torch",
-        "documentation": {}
-    },
-    {
-        "label": "optim",
-        "importPath": "torch",
-        "description": "torch",
-        "isExtraImport": true,
-        "detail": "torch",
-        "documentation": {}
-    },
-    {
         "label": "Tensor",
         "importPath": "torch",
         "description": "torch",
@@ -231,14 +215,6 @@
     },
     {
         "label": "diagonal",
-        "importPath": "torch",
-        "description": "torch",
-        "isExtraImport": true,
-        "detail": "torch",
-        "documentation": {}
-    },
-    {
-        "label": "nn",
         "importPath": "torch",
         "description": "torch",
         "isExtraImport": true,
@@ -395,257 +371,6 @@
         "documentation": {}
     },
     {
-        "label": "data_provider",
-        "importPath": "data_provider.data_factory",
-        "description": "data_provider.data_factory",
-        "isExtraImport": true,
-        "detail": "data_provider.data_factory",
-        "documentation": {}
-    },
-    {
-        "label": "data_provider",
-        "importPath": "data_provider.data_factory",
-        "description": "data_provider.data_factory",
-        "isExtraImport": true,
-        "detail": "data_provider.data_factory",
-        "documentation": {}
-    },
-    {
-        "label": "data_provider",
-        "importPath": "data_provider.data_factory",
-        "description": "data_provider.data_factory",
-        "isExtraImport": true,
-        "detail": "data_provider.data_factory",
-        "documentation": {}
-    },
-    {
-        "label": "data_provider",
-        "importPath": "data_provider.data_factory",
-        "description": "data_provider.data_factory",
-        "isExtraImport": true,
-        "detail": "data_provider.data_factory",
-        "documentation": {}
-    },
-    {
-        "label": "data_provider",
-        "importPath": "data_provider.data_factory",
-        "description": "data_provider.data_factory",
-        "isExtraImport": true,
-        "detail": "data_provider.data_factory",
-        "documentation": {}
-    },
-    {
-        "label": "data_provider",
-        "importPath": "data_provider.data_factory",
-        "description": "data_provider.data_factory",
-        "isExtraImport": true,
-        "detail": "data_provider.data_factory",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Basic",
-        "importPath": "exp.exp_basic",
-        "description": "exp.exp_basic",
-        "isExtraImport": true,
-        "detail": "exp.exp_basic",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Basic",
-        "importPath": "exp.exp_basic",
-        "description": "exp.exp_basic",
-        "isExtraImport": true,
-        "detail": "exp.exp_basic",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Basic",
-        "importPath": "exp.exp_basic",
-        "description": "exp.exp_basic",
-        "isExtraImport": true,
-        "detail": "exp.exp_basic",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Basic",
-        "importPath": "exp.exp_basic",
-        "description": "exp.exp_basic",
-        "isExtraImport": true,
-        "detail": "exp.exp_basic",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Basic",
-        "importPath": "exp.exp_basic",
-        "description": "exp.exp_basic",
-        "isExtraImport": true,
-        "detail": "exp.exp_basic",
-        "documentation": {}
-    },
-    {
-        "label": "EarlyStopping",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "adjust_learning_rate",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "adjustment",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "EarlyStopping",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "adjust_learning_rate",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "cal_accuracy",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "EarlyStopping",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "adjust_learning_rate",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "visual",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "EarlyStopping",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "adjust_learning_rate",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "visual",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "EarlyStopping",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "adjust_learning_rate",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "visual",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "precision_recall_fscore_support",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "accuracy_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "torch.multiprocessing",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "torch.multiprocessing",
-        "description": "torch.multiprocessing",
-        "detail": "torch.multiprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "torch.nn",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "torch.nn",
-        "description": "torch.nn",
-        "detail": "torch.nn",
-        "documentation": {}
-    },
-    {
-        "label": "time",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
-        "documentation": {}
-    },
-    {
         "label": "Autoformer",
         "importPath": "models",
         "description": "models",
@@ -702,28 +427,157 @@
         "documentation": {}
     },
     {
-        "label": "pdb",
+        "label": "data_provider",
+        "importPath": "data_provider.data_factory",
+        "description": "data_provider.data_factory",
+        "isExtraImport": true,
+        "detail": "data_provider.data_factory",
+        "documentation": {}
+    },
+    {
+        "label": "data_provider",
+        "importPath": "data_provider.data_factory",
+        "description": "data_provider.data_factory",
+        "isExtraImport": true,
+        "detail": "data_provider.data_factory",
+        "documentation": {}
+    },
+    {
+        "label": "data_provider",
+        "importPath": "data_provider.data_factory",
+        "description": "data_provider.data_factory",
+        "isExtraImport": true,
+        "detail": "data_provider.data_factory",
+        "documentation": {}
+    },
+    {
+        "label": "Exp_Basic",
+        "importPath": "exp.exp_basic",
+        "description": "exp.exp_basic",
+        "isExtraImport": true,
+        "detail": "exp.exp_basic",
+        "documentation": {}
+    },
+    {
+        "label": "Exp_Basic",
+        "importPath": "exp.exp_basic",
+        "description": "exp.exp_basic",
+        "isExtraImport": true,
+        "detail": "exp.exp_basic",
+        "documentation": {}
+    },
+    {
+        "label": "Exp_Basic",
+        "importPath": "exp.exp_basic",
+        "description": "exp.exp_basic",
+        "isExtraImport": true,
+        "detail": "exp.exp_basic",
+        "documentation": {}
+    },
+    {
+        "label": "EarlyStopping",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "adjust_learning_rate",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "visual",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "EarlyStopping",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "adjust_learning_rate",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "visual",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "EarlyStopping",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "adjust_learning_rate",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "visual",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "metric",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "metric",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "pdb",
-        "description": "pdb",
-        "detail": "pdb",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
         "documentation": {}
     },
     {
-        "label": "metric",
-        "importPath": "utils.metrics",
-        "description": "utils.metrics",
+        "label": "time",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "utils.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "metric",
-        "importPath": "utils.metrics",
-        "description": "utils.metrics",
-        "isExtraImport": true,
-        "detail": "utils.metrics",
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
         "documentation": {}
     },
     {
@@ -818,14 +672,6 @@
         "documentation": {}
     },
     {
-        "label": "ceil",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
         "label": "rearrange",
         "importPath": "einops",
         "description": "einops",
@@ -882,46 +728,6 @@
         "documentation": {}
     },
     {
-        "label": "rearrange",
-        "importPath": "einops",
-        "description": "einops",
-        "isExtraImport": true,
-        "detail": "einops",
-        "documentation": {}
-    },
-    {
-        "label": "repeat",
-        "importPath": "einops",
-        "description": "einops",
-        "isExtraImport": true,
-        "detail": "einops",
-        "documentation": {}
-    },
-    {
-        "label": "rearrange",
-        "importPath": "einops",
-        "description": "einops",
-        "isExtraImport": true,
-        "detail": "einops",
-        "documentation": {}
-    },
-    {
-        "label": "repeat",
-        "importPath": "einops",
-        "description": "einops",
-        "isExtraImport": true,
-        "detail": "einops",
-        "documentation": {}
-    },
-    {
-        "label": "einsum",
-        "importPath": "einops",
-        "description": "einops",
-        "isExtraImport": true,
-        "detail": "einops",
-        "documentation": {}
-    },
-    {
         "label": "TwoStageAttentionLayer",
         "importPath": "layers.SelfAttention_Family",
         "description": "layers.SelfAttention_Family",
@@ -939,118 +745,6 @@
     },
     {
         "label": "FullAttention",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "AttentionLayer",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "FullAttention",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "TwoStageAttentionLayer",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "ProbAttention",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "AttentionLayer",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "DSAttention",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "AttentionLayer",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "FullAttention",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "AttentionLayer",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "ReformerLayer",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "FullAttention",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "AttentionLayer",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "FullAttention",
-        "importPath": "layers.SelfAttention_Family",
-        "description": "layers.SelfAttention_Family",
-        "isExtraImport": true,
-        "detail": "layers.SelfAttention_Family",
-        "documentation": {}
-    },
-    {
-        "label": "AttentionLayer",
         "importPath": "layers.SelfAttention_Family",
         "description": "layers.SelfAttention_Family",
         "isExtraImport": true,
@@ -1124,6 +818,15 @@
         "documentation": {}
     },
     {
+        "label": "pdb",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pdb",
+        "description": "pdb",
+        "detail": "pdb",
+        "documentation": {}
+    },
+    {
         "label": "Poly",
         "importPath": "sympy",
         "description": "sympy",
@@ -1188,126 +891,6 @@
         "documentation": {}
     },
     {
-        "label": "DataEmbedding_wo_pos",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "PatchEmbedding",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "PatchEmbedding",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding_wo_pos",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding_inverted",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
         "label": "TriangularCausalMask",
         "importPath": "utils.masking",
         "description": "utils.masking",
@@ -1332,134 +915,6 @@
         "documentation": {}
     },
     {
-        "label": "AutoCorrelation",
-        "importPath": "layers.AutoCorrelation",
-        "description": "layers.AutoCorrelation",
-        "isExtraImport": true,
-        "detail": "layers.AutoCorrelation",
-        "documentation": {}
-    },
-    {
-        "label": "AutoCorrelationLayer",
-        "importPath": "layers.AutoCorrelation",
-        "description": "layers.AutoCorrelation",
-        "isExtraImport": true,
-        "detail": "layers.AutoCorrelation",
-        "documentation": {}
-    },
-    {
-        "label": "AutoCorrelationLayer",
-        "importPath": "layers.AutoCorrelation",
-        "description": "layers.AutoCorrelation",
-        "isExtraImport": true,
-        "detail": "layers.AutoCorrelation",
-        "documentation": {}
-    },
-    {
-        "label": "Encoder",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Decoder",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "EncoderLayer",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "DecoderLayer",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "my_Layernorm",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "series_decomp",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "series_decomp",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Encoder",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Decoder",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "EncoderLayer",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "DecoderLayer",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "my_Layernorm",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "series_decomp",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
         "label": "series_decomp",
         "importPath": "layers.Autoformer_EncDec",
         "description": "layers.Autoformer_EncDec",
@@ -1473,342 +928,6 @@
         "description": "layers.Autoformer_EncDec",
         "isExtraImport": true,
         "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "series_decomp",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "series_decomp",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "scale_block",
-        "importPath": "layers.Crossformer_EncDec",
-        "description": "layers.Crossformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Crossformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Encoder",
-        "importPath": "layers.Crossformer_EncDec",
-        "description": "layers.Crossformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Crossformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Decoder",
-        "importPath": "layers.Crossformer_EncDec",
-        "description": "layers.Crossformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Crossformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "DecoderLayer",
-        "importPath": "layers.Crossformer_EncDec",
-        "description": "layers.Crossformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Crossformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "FlattenHead",
-        "importPath": "models.PatchTST",
-        "description": "models.PatchTST",
-        "isExtraImport": true,
-        "detail": "models.PatchTST",
-        "documentation": {}
-    },
-    {
-        "label": "EncoderLayer",
-        "importPath": "layers.ETSformer_EncDec",
-        "description": "layers.ETSformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.ETSformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Encoder",
-        "importPath": "layers.ETSformer_EncDec",
-        "description": "layers.ETSformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.ETSformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "DecoderLayer",
-        "importPath": "layers.ETSformer_EncDec",
-        "description": "layers.ETSformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.ETSformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Decoder",
-        "importPath": "layers.ETSformer_EncDec",
-        "description": "layers.ETSformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.ETSformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Transform",
-        "importPath": "layers.ETSformer_EncDec",
-        "description": "layers.ETSformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.ETSformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "FourierBlock",
-        "importPath": "layers.FourierCorrelation",
-        "description": "layers.FourierCorrelation",
-        "isExtraImport": true,
-        "detail": "layers.FourierCorrelation",
-        "documentation": {}
-    },
-    {
-        "label": "FourierCrossAttention",
-        "importPath": "layers.FourierCorrelation",
-        "description": "layers.FourierCorrelation",
-        "isExtraImport": true,
-        "detail": "layers.FourierCorrelation",
-        "documentation": {}
-    },
-    {
-        "label": "MultiWaveletCross",
-        "importPath": "layers.MultiWaveletCorrelation",
-        "description": "layers.MultiWaveletCorrelation",
-        "isExtraImport": true,
-        "detail": "layers.MultiWaveletCorrelation",
-        "documentation": {}
-    },
-    {
-        "label": "MultiWaveletTransform",
-        "importPath": "layers.MultiWaveletCorrelation",
-        "description": "layers.MultiWaveletCorrelation",
-        "isExtraImport": true,
-        "detail": "layers.MultiWaveletCorrelation",
-        "documentation": {}
-    },
-    {
-        "label": "signal",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
-        "label": "special",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
-        "label": "Decoder",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "DecoderLayer",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Encoder",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "EncoderLayer",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "ConvLayer",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Decoder",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "DecoderLayer",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Encoder",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "EncoderLayer",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Encoder",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "EncoderLayer",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Encoder",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "EncoderLayer",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Decoder",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "DecoderLayer",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Encoder",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "EncoderLayer",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "ConvLayer",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Encoder",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "EncoderLayer",
-        "importPath": "layers.Transformer_EncDec",
-        "description": "layers.Transformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Transformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Mamba",
-        "importPath": "mamba_ssm",
-        "description": "mamba_ssm",
-        "isExtraImport": true,
-        "detail": "mamba_ssm",
-        "documentation": {}
-    },
-    {
-        "label": "Encoder",
-        "importPath": "layers.Pyraformer_EncDec",
-        "description": "layers.Pyraformer_EncDec",
-        "isExtraImport": true,
-        "detail": "layers.Pyraformer_EncDec",
-        "documentation": {}
-    },
-    {
-        "label": "Normalize",
-        "importPath": "layers.StandardNorm",
-        "description": "layers.StandardNorm",
-        "isExtraImport": true,
-        "detail": "layers.StandardNorm",
-        "documentation": {}
-    },
-    {
-        "label": "Inception_Block_V1",
-        "importPath": "layers.Conv_Blocks",
-        "description": "layers.Conv_Blocks",
-        "isExtraImport": true,
-        "detail": "layers.Conv_Blocks",
         "documentation": {}
     },
     {
@@ -2092,30 +1211,12 @@
         "documentation": {}
     },
     {
-        "label": "Exp_Anomaly_Detection",
-        "kind": 6,
-        "importPath": "exp.exp_anomaly_detection",
-        "description": "exp.exp_anomaly_detection",
-        "peekOfCode": "class Exp_Anomaly_Detection(Exp_Basic):\n    def __init__(self, args):\n        super(Exp_Anomaly_Detection, self).__init__(args)\n    def _build_model(self):\n        model = self.model_dict[self.args.model].Model(self.args).float()\n        if self.args.use_multi_gpu and self.args.use_gpu:\n            model = nn.DataParallel(model, device_ids=self.args.device_ids)\n        return model\n    def _get_data(self, flag):\n        data_set, data_loader = data_provider(self.args, flag)",
-        "detail": "exp.exp_anomaly_detection",
-        "documentation": {}
-    },
-    {
         "label": "Exp_Basic",
         "kind": 6,
         "importPath": "exp.exp_basic",
         "description": "exp.exp_basic",
         "peekOfCode": "class Exp_Basic(object):\n    def __init__(self, args):\n        self.args = args\n        self.model_dict = {\n            'TimesNet': TimesNet,\n            'Autoformer': Autoformer,\n            'Transformer': Transformer,\n            'Nonstationary_Transformer': Nonstationary_Transformer,\n            'DLinear': DLinear,\n            'FEDformer': FEDformer,",
         "detail": "exp.exp_basic",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Classification",
-        "kind": 6,
-        "importPath": "exp.exp_classification",
-        "description": "exp.exp_classification",
-        "peekOfCode": "class Exp_Classification(Exp_Basic):\n    def __init__(self, args):\n        super(Exp_Classification, self).__init__(args)\n    def _build_model(self):\n        # model input depends on data\n        train_data, train_loader = self._get_data(flag='TRAIN')\n        test_data, test_loader = self._get_data(flag='TEST')\n        self.args.seq_len = max(train_data.max_seq_len, test_data.max_seq_len)\n        self.args.pred_len = 0\n        self.args.enc_in = train_data.feature_df.shape[1]",
-        "detail": "exp.exp_classification",
         "documentation": {}
     },
     {
@@ -2776,195 +1877,6 @@
         "documentation": {}
     },
     {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.Autoformer",
-        "description": "models.Autoformer",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Autoformer is the first method to achieve the series-wise connection,\n    with inherent O(LlogL) complexity\n    Paper link: https://openreview.net/pdf?id=I55UqU-M11y\n    \"\"\"\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.task_name = configs.task_name\n        self.seq_len = configs.seq_len",
-        "detail": "models.Autoformer",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.Crossformer",
-        "description": "models.Crossformer",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://openreview.net/pdf?id=vSVLM2j9eie\n    \"\"\"\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.enc_in = configs.enc_in\n        self.seq_len = configs.seq_len\n        self.pred_len = configs.pred_len\n        self.seg_len = 12",
-        "detail": "models.Crossformer",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.DLinear",
-        "description": "models.DLinear",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://arxiv.org/pdf/2205.13504.pdf\n    \"\"\"\n    def __init__(self, configs, individual=False):\n        \"\"\"\n        individual: Bool, whether shared model among different variates.\n        \"\"\"\n        super(Model, self).__init__()\n        self.task_name = configs.task_name",
-        "detail": "models.DLinear",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.ETSformer",
-        "description": "models.ETSformer",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://arxiv.org/abs/2202.01381\n    \"\"\"\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.task_name = configs.task_name\n        self.seq_len = configs.seq_len\n        self.label_len = configs.label_len\n        if self.task_name == 'classification' or self.task_name == 'anomaly_detection' or self.task_name == 'imputation':",
-        "detail": "models.ETSformer",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.FEDformer",
-        "description": "models.FEDformer",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    FEDformer performs the attention mechanism on frequency domain and achieved O(N) complexity\n    Paper link: https://proceedings.mlr.press/v162/zhou22g.html\n    \"\"\"\n    def __init__(self, configs, version='fourier', mode_select='random', modes=32):\n        \"\"\"\n        version: str, for FEDformer, there are two versions to choose, options: [Fourier, Wavelets].\n        mode_select: str, for FEDformer, there are two mode selection method, options: [random, low].\n        modes: int, modes to be selected.",
-        "detail": "models.FEDformer",
-        "documentation": {}
-    },
-    {
-        "label": "HiPPO_LegT",
-        "kind": 6,
-        "importPath": "models.FiLM",
-        "description": "models.FiLM",
-        "peekOfCode": "class HiPPO_LegT(nn.Module):\n    def __init__(self, N, dt=1.0, discretization='bilinear'):\n        \"\"\"\n        N: the order of the HiPPO projection\n        dt: discretization step size - should be roughly inverse to the length of the sequence\n        \"\"\"\n        super(HiPPO_LegT, self).__init__()\n        self.N = N\n        A, B = transition(N)\n        C = np.ones((1, N))",
-        "detail": "models.FiLM",
-        "documentation": {}
-    },
-    {
-        "label": "SpectralConv1d",
-        "kind": 6,
-        "importPath": "models.FiLM",
-        "description": "models.FiLM",
-        "peekOfCode": "class SpectralConv1d(nn.Module):\n    def __init__(self, in_channels, out_channels, seq_len, ratio=0.5):\n        \"\"\"\n        1D Fourier layer. It does FFT, linear transform, and Inverse FFT.\n        \"\"\"\n        super(SpectralConv1d, self).__init__()\n        self.in_channels = in_channels\n        self.out_channels = out_channels\n        self.ratio = ratio\n        self.modes = min(32, seq_len // 2)",
-        "detail": "models.FiLM",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.FiLM",
-        "description": "models.FiLM",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://arxiv.org/abs/2205.08897\n    \"\"\"\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.task_name = configs.task_name\n        self.configs = configs\n        # self.modes = configs.modes\n        self.seq_len = configs.seq_len",
-        "detail": "models.FiLM",
-        "documentation": {}
-    },
-    {
-        "label": "transition",
-        "kind": 2,
-        "importPath": "models.FiLM",
-        "description": "models.FiLM",
-        "peekOfCode": "def transition(N):\n    Q = np.arange(N, dtype=np.float64)\n    R = (2 * Q + 1)[:, None]  # / theta\n    j, i = np.meshgrid(Q, Q)\n    A = np.where(i < j, -1, (-1.) ** (i - j + 1)) * R\n    B = (-1.) ** Q[:, None] * R\n    return A, B\nclass HiPPO_LegT(nn.Module):\n    def __init__(self, N, dt=1.0, discretization='bilinear'):\n        \"\"\"",
-        "detail": "models.FiLM",
-        "documentation": {}
-    },
-    {
-        "label": "device",
-        "kind": 5,
-        "importPath": "models.FiLM",
-        "description": "models.FiLM",
-        "peekOfCode": "device = torch.device(\"cuda:0\" if torch.cuda.is_available() else \"cpu\")\ndef transition(N):\n    Q = np.arange(N, dtype=np.float64)\n    R = (2 * Q + 1)[:, None]  # / theta\n    j, i = np.meshgrid(Q, Q)\n    A = np.where(i < j, -1, (-1.) ** (i - j + 1)) * R\n    B = (-1.) ** Q[:, None] * R\n    return A, B\nclass HiPPO_LegT(nn.Module):\n    def __init__(self, N, dt=1.0, discretization='bilinear'):",
-        "detail": "models.FiLM",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.FreTS",
-        "description": "models.FreTS",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://arxiv.org/pdf/2311.06184.pdf\n    \"\"\"\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.task_name = configs.task_name\n        if self.task_name == 'classification' or self.task_name == 'anomaly_detection' or self.task_name == 'imputation':\n            self.pred_len = configs.seq_len\n        else:",
-        "detail": "models.FreTS",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.Informer",
-        "description": "models.Informer",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Informer with Propspare attention in O(LlogL) complexity\n    Paper link: https://ojs.aaai.org/index.php/AAAI/article/view/17325/17132\n    \"\"\"\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.task_name = configs.task_name\n        self.pred_len = configs.pred_len\n        self.label_len = configs.label_len",
-        "detail": "models.Informer",
-        "documentation": {}
-    },
-    {
-        "label": "FourierFilter",
-        "kind": 6,
-        "importPath": "models.Koopa",
-        "description": "models.Koopa",
-        "peekOfCode": "class FourierFilter(nn.Module):\n    \"\"\"\n    Fourier Filter: to time-variant and time-invariant term\n    \"\"\"\n    def __init__(self, mask_spectrum):\n        super(FourierFilter, self).__init__()\n        self.mask_spectrum = mask_spectrum\n    def forward(self, x):\n        xf = torch.fft.rfft(x, dim=1)\n        mask = torch.ones_like(xf)",
-        "detail": "models.Koopa",
-        "documentation": {}
-    },
-    {
-        "label": "MLP",
-        "kind": 6,
-        "importPath": "models.Koopa",
-        "description": "models.Koopa",
-        "peekOfCode": "class MLP(nn.Module):\n    '''\n    Multilayer perceptron to encode/decode high dimension representation of sequential data\n    '''\n    def __init__(self, \n                 f_in, \n                 f_out, \n                 hidden_dim=128, \n                 hidden_layers=2, \n                 dropout=0.05,",
-        "detail": "models.Koopa",
-        "documentation": {}
-    },
-    {
-        "label": "KPLayer",
-        "kind": 6,
-        "importPath": "models.Koopa",
-        "description": "models.Koopa",
-        "peekOfCode": "class KPLayer(nn.Module):\n    \"\"\"\n    A demonstration of finding one step transition of linear system by DMD iteratively\n    \"\"\"\n    def __init__(self): \n        super(KPLayer, self).__init__()\n        self.K = None # B E E\n    def one_step_forward(self, z, return_rec=False, return_K=False):\n        B, input_len, E = z.shape\n        assert input_len > 1, 'snapshots number should be larger than 1'",
-        "detail": "models.Koopa",
-        "documentation": {}
-    },
-    {
-        "label": "KPLayerApprox",
-        "kind": 6,
-        "importPath": "models.Koopa",
-        "description": "models.Koopa",
-        "peekOfCode": "class KPLayerApprox(nn.Module):\n    \"\"\"\n    Find koopman transition of linear system by DMD with multistep K approximation\n    \"\"\"\n    def __init__(self): \n        super(KPLayerApprox, self).__init__()\n        self.K = None # B E E\n        self.K_step = None # B E E\n    def forward(self, z, pred_len=1):\n        # z:       B L E, koopman invariance space representation",
-        "detail": "models.Koopa",
-        "documentation": {}
-    },
-    {
-        "label": "TimeVarKP",
-        "kind": 6,
-        "importPath": "models.Koopa",
-        "description": "models.Koopa",
-        "peekOfCode": "class TimeVarKP(nn.Module):\n    \"\"\"\n    Koopman Predictor with DMD (analysitical solution of Koopman operator)\n    Utilize local variations within individual sliding window to predict the future of time-variant term\n    \"\"\"\n    def __init__(self,\n                 enc_in=8,\n                 input_len=96,\n                 pred_len=96,\n                 seg_len=24,",
-        "detail": "models.Koopa",
-        "documentation": {}
-    },
-    {
-        "label": "TimeInvKP",
-        "kind": 6,
-        "importPath": "models.Koopa",
-        "description": "models.Koopa",
-        "peekOfCode": "class TimeInvKP(nn.Module):\n    \"\"\"\n    Koopman Predictor with learnable Koopman operator\n    Utilize lookback and forecast window snapshots to predict the future of time-invariant term\n    \"\"\"\n    def __init__(self,\n                 input_len=96,\n                 pred_len=96,\n                 dynamic_dim=128,\n                 encoder=None,",
-        "detail": "models.Koopa",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.Koopa",
-        "description": "models.Koopa",
-        "peekOfCode": "class Model(nn.Module):\n    '''\n    Paper link: https://arxiv.org/pdf/2305.18803.pdf\n    '''\n    def __init__(self, configs, dynamic_dim=128, hidden_dim=64, hidden_layers=2, num_blocks=3, multistep=False):\n        \"\"\"\n        mask_spectrum: list, shared frequency spectrums\n        seg_len: int, segment length of time series\n        dynamic_dim: int, latent dimension of koopman embedding\n        hidden_dim: int, hidden dimension of en/decoder",
-        "detail": "models.Koopa",
-        "documentation": {}
-    },
-    {
-        "label": "IEBlock",
-        "kind": 6,
-        "importPath": "models.LightTS",
-        "description": "models.LightTS",
-        "peekOfCode": "class IEBlock(nn.Module):\n    def __init__(self, input_dim, hid_dim, output_dim, num_node):\n        super(IEBlock, self).__init__()\n        self.input_dim = input_dim\n        self.hid_dim = hid_dim\n        self.output_dim = output_dim\n        self.num_node = num_node\n        self._build()\n    def _build(self):\n        self.spatial_proj = nn.Sequential(",
-        "detail": "models.LightTS",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.LightTS",
-        "description": "models.LightTS",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://arxiv.org/abs/2207.01186\n    \"\"\"\n    def __init__(self, configs, chunk_size=24):\n        \"\"\"\n        chunk_size: int, reshape T into [num_chunks, chunk_size]\n        \"\"\"\n        super(Model, self).__init__()\n        self.task_name = configs.task_name",
-        "detail": "models.LightTS",
-        "documentation": {}
-    },
-    {
         "label": "MIC",
         "kind": 6,
         "importPath": "models.MICN",
@@ -2989,249 +1901,6 @@
         "description": "models.MICN",
         "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://openreview.net/pdf?id=zt53IDUR1U\n    \"\"\"\n    def __init__(self, configs, conv_kernel=[12, 16]):\n        \"\"\"\n        conv_kernel: downsampling and upsampling convolution kernel_size\n        \"\"\"\n        super(Model, self).__init__()\n        decomp_kernel = []  # kernel of decomposition operation",
         "detail": "models.MICN",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.Mamba",
-        "description": "models.Mamba",
-        "peekOfCode": "class Model(nn.Module):\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.task_name = configs.task_name\n        self.pred_len = configs.pred_len\n        self.d_inner = configs.d_model * configs.expand\n        self.dt_rank = math.ceil(configs.d_model / 16) # TODO implement \"auto\"\n        self.embedding = DataEmbedding(configs.enc_in, configs.d_model, configs.embed, configs.freq, configs.dropout)\n        self.mamba = Mamba(\n            d_model = configs.d_model,",
-        "detail": "models.Mamba",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.MambaSimple",
-        "description": "models.MambaSimple",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Mamba, linear-time sequence modeling with selective state spaces O(L)\n    Paper link: https://arxiv.org/abs/2312.00752\n    Implementation refernce: https://github.com/johnma2006/mamba-minimal/\n    \"\"\"\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.task_name = configs.task_name\n        self.pred_len = configs.pred_len",
-        "detail": "models.MambaSimple",
-        "documentation": {}
-    },
-    {
-        "label": "ResidualBlock",
-        "kind": 6,
-        "importPath": "models.MambaSimple",
-        "description": "models.MambaSimple",
-        "peekOfCode": "class ResidualBlock(nn.Module):\n    def __init__(self, configs, d_inner, dt_rank):\n        super(ResidualBlock, self).__init__()\n        self.mixer = MambaBlock(configs, d_inner, dt_rank)\n        self.norm = RMSNorm(configs.d_model)\n    def forward(self, x):\n        output = self.mixer(self.norm(x)) + x\n        return output\nclass MambaBlock(nn.Module):\n    def __init__(self, configs, d_inner, dt_rank):",
-        "detail": "models.MambaSimple",
-        "documentation": {}
-    },
-    {
-        "label": "MambaBlock",
-        "kind": 6,
-        "importPath": "models.MambaSimple",
-        "description": "models.MambaSimple",
-        "peekOfCode": "class MambaBlock(nn.Module):\n    def __init__(self, configs, d_inner, dt_rank):\n        super(MambaBlock, self).__init__()\n        self.d_inner = d_inner\n        self.dt_rank = dt_rank\n        self.in_proj = nn.Linear(configs.d_model, self.d_inner * 2, bias=False)\n        self.conv1d = nn.Conv1d(\n            in_channels = self.d_inner,\n            out_channels = self.d_inner,\n            bias = True,",
-        "detail": "models.MambaSimple",
-        "documentation": {}
-    },
-    {
-        "label": "RMSNorm",
-        "kind": 6,
-        "importPath": "models.MambaSimple",
-        "description": "models.MambaSimple",
-        "peekOfCode": "class RMSNorm(nn.Module):\n    def __init__(self, d_model, eps=1e-5):\n        super(RMSNorm, self).__init__()\n        self.eps = eps\n        self.weight = nn.Parameter(torch.ones(d_model))\n    def forward(self, x):\n        output = x * torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + self.eps) * self.weight\n        return output",
-        "detail": "models.MambaSimple",
-        "documentation": {}
-    },
-    {
-        "label": "Projector",
-        "kind": 6,
-        "importPath": "models.Nonstationary_Transformer",
-        "description": "models.Nonstationary_Transformer",
-        "peekOfCode": "class Projector(nn.Module):\n    '''\n    MLP to learn the De-stationary factors\n    Paper link: https://openreview.net/pdf?id=ucNDIDRNjjv\n    '''\n    def __init__(self, enc_in, seq_len, hidden_dims, hidden_layers, output_dim, kernel_size=3):\n        super(Projector, self).__init__()\n        padding = 1 if torch.__version__ >= '1.5.0' else 2\n        self.series_conv = nn.Conv1d(in_channels=seq_len, out_channels=1, kernel_size=kernel_size, padding=padding,\n                                     padding_mode='circular', bias=False)",
-        "detail": "models.Nonstationary_Transformer",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.Nonstationary_Transformer",
-        "description": "models.Nonstationary_Transformer",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://openreview.net/pdf?id=ucNDIDRNjjv\n    \"\"\"\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.task_name = configs.task_name\n        self.pred_len = configs.pred_len\n        self.seq_len = configs.seq_len\n        self.label_len = configs.label_len",
-        "detail": "models.Nonstationary_Transformer",
-        "documentation": {}
-    },
-    {
-        "label": "FlattenHead",
-        "kind": 6,
-        "importPath": "models.PatchTST",
-        "description": "models.PatchTST",
-        "peekOfCode": "class FlattenHead(nn.Module):\n    def __init__(self, n_vars, nf, target_window, head_dropout=0):\n        super().__init__()\n        self.n_vars = n_vars\n        self.flatten = nn.Flatten(start_dim=-2)\n        self.linear = nn.Linear(nf, target_window)\n        self.dropout = nn.Dropout(head_dropout)\n    def forward(self, x):  # x: [bs x nvars x d_model x patch_num]\n        x = self.flatten(x)\n        x = self.linear(x)",
-        "detail": "models.PatchTST",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.PatchTST",
-        "description": "models.PatchTST",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://arxiv.org/pdf/2211.14730.pdf\n    \"\"\"\n    def __init__(self, configs, patch_len=16, stride=8):\n        \"\"\"\n        patch_len: int, patch len for patch_embedding\n        stride: int, stride for patch_embedding\n        \"\"\"\n        super().__init__()",
-        "detail": "models.PatchTST",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.Pyraformer",
-        "description": "models.Pyraformer",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\" \n    Pyraformer: Pyramidal attention to reduce complexity\n    Paper link: https://openreview.net/pdf?id=0EXmFzUn5I\n    \"\"\"\n    def __init__(self, configs, window_size=[4,4], inner_size=5):\n        \"\"\"\n        window_size: list, the downsample window size in pyramidal attention.\n        inner_size: int, the size of neighbour attention\n        \"\"\"",
-        "detail": "models.Pyraformer",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.Reformer",
-        "description": "models.Reformer",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Reformer with O(LlogL) complexity\n    Paper link: https://openreview.net/forum?id=rkgNKkHtvB\n    \"\"\"\n    def __init__(self, configs, bucket_size=4, n_hashes=4):\n        \"\"\"\n        bucket_size: int, \n        n_hashes: int, \n        \"\"\"",
-        "detail": "models.Reformer",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.SegRNN",
-        "description": "models.SegRNN",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://arxiv.org/abs/2308.11200.pdf\n    \"\"\"\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        # get parameters\n        self.seq_len = configs.seq_len\n        self.enc_in = configs.enc_in\n        self.d_model = configs.d_model",
-        "detail": "models.SegRNN",
-        "documentation": {}
-    },
-    {
-        "label": "ResBlock",
-        "kind": 6,
-        "importPath": "models.TSMixer",
-        "description": "models.TSMixer",
-        "peekOfCode": "class ResBlock(nn.Module):\n    def __init__(self, configs):\n        super(ResBlock, self).__init__()\n        self.temporal = nn.Sequential(\n            nn.Linear(configs.seq_len, configs.d_model),\n            nn.ReLU(),\n            nn.Linear(configs.d_model, configs.seq_len),\n            nn.Dropout(configs.dropout)\n        )\n        self.channel = nn.Sequential(",
-        "detail": "models.TSMixer",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.TSMixer",
-        "description": "models.TSMixer",
-        "peekOfCode": "class Model(nn.Module):\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.task_name = configs.task_name\n        self.layer = configs.e_layers\n        self.model = nn.ModuleList([ResBlock(configs)\n                                    for _ in range(configs.e_layers)])\n        self.pred_len = configs.pred_len\n        self.projection = nn.Linear(configs.seq_len, configs.pred_len)\n    def forecast(self, x_enc, x_mark_enc, x_dec, x_mark_dec, mask=None):",
-        "detail": "models.TSMixer",
-        "documentation": {}
-    },
-    {
-        "label": "LayerNorm",
-        "kind": 6,
-        "importPath": "models.TiDE",
-        "description": "models.TiDE",
-        "peekOfCode": "class LayerNorm(nn.Module):\n    \"\"\" LayerNorm but with an optional bias. PyTorch doesn't support simply bias=False \"\"\"\n    def __init__(self, ndim, bias):\n        super().__init__()\n        self.weight = nn.Parameter(torch.ones(ndim))\n        self.bias = nn.Parameter(torch.zeros(ndim)) if bias else None\n    def forward(self, input):\n        return F.layer_norm(input, self.weight.shape, self.weight, self.bias, 1e-5)\nclass ResBlock(nn.Module):\n    def __init__(self, input_dim, hidden_dim, output_dim, dropout=0.1, bias=True): ",
-        "detail": "models.TiDE",
-        "documentation": {}
-    },
-    {
-        "label": "ResBlock",
-        "kind": 6,
-        "importPath": "models.TiDE",
-        "description": "models.TiDE",
-        "peekOfCode": "class ResBlock(nn.Module):\n    def __init__(self, input_dim, hidden_dim, output_dim, dropout=0.1, bias=True): \n        super().__init__()\n        self.fc1 = nn.Linear(input_dim, hidden_dim, bias=bias) \n        self.fc2 = nn.Linear(hidden_dim, output_dim, bias=bias)\n        self.fc3 = nn.Linear(input_dim, output_dim, bias=bias)\n        self.dropout = nn.Dropout(dropout)\n        self.relu = nn.ReLU()\n        self.ln = LayerNorm(output_dim, bias=bias)\n    def forward(self, x):",
-        "detail": "models.TiDE",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.TiDE",
-        "description": "models.TiDE",
-        "peekOfCode": "class Model(nn.Module):  \n    \"\"\"\n    paper: https://arxiv.org/pdf/2304.08424.pdf \n    \"\"\"\n    def __init__(self, configs, bias=True, feature_encode_dim=2): \n        super(Model, self).__init__()\n        self.configs = configs\n        self.task_name = configs.task_name\n        self.seq_len = configs.seq_len  #L \n        self.label_len = configs.label_len",
-        "detail": "models.TiDE",
-        "documentation": {}
-    },
-    {
-        "label": "DFT_series_decomp",
-        "kind": 6,
-        "importPath": "models.TimeMixer",
-        "description": "models.TimeMixer",
-        "peekOfCode": "class DFT_series_decomp(nn.Module):\n    \"\"\"\n    Series decomposition block\n    \"\"\"\n    def __init__(self, top_k=5):\n        super(DFT_series_decomp, self).__init__()\n        self.top_k = top_k\n    def forward(self, x):\n        xf = torch.fft.rfft(x)\n        freq = abs(xf)",
-        "detail": "models.TimeMixer",
-        "documentation": {}
-    },
-    {
-        "label": "MultiScaleSeasonMixing",
-        "kind": 6,
-        "importPath": "models.TimeMixer",
-        "description": "models.TimeMixer",
-        "peekOfCode": "class MultiScaleSeasonMixing(nn.Module):\n    \"\"\"\n    Bottom-up mixing season pattern\n    \"\"\"\n    def __init__(self, configs):\n        super(MultiScaleSeasonMixing, self).__init__()\n        self.down_sampling_layers = torch.nn.ModuleList(\n            [\n                nn.Sequential(\n                    torch.nn.Linear(",
-        "detail": "models.TimeMixer",
-        "documentation": {}
-    },
-    {
-        "label": "MultiScaleTrendMixing",
-        "kind": 6,
-        "importPath": "models.TimeMixer",
-        "description": "models.TimeMixer",
-        "peekOfCode": "class MultiScaleTrendMixing(nn.Module):\n    \"\"\"\n    Top-down mixing trend pattern\n    \"\"\"\n    def __init__(self, configs):\n        super(MultiScaleTrendMixing, self).__init__()\n        self.up_sampling_layers = torch.nn.ModuleList(\n            [\n                nn.Sequential(\n                    torch.nn.Linear(",
-        "detail": "models.TimeMixer",
-        "documentation": {}
-    },
-    {
-        "label": "PastDecomposableMixing",
-        "kind": 6,
-        "importPath": "models.TimeMixer",
-        "description": "models.TimeMixer",
-        "peekOfCode": "class PastDecomposableMixing(nn.Module):\n    def __init__(self, configs):\n        super(PastDecomposableMixing, self).__init__()\n        self.seq_len = configs.seq_len\n        self.pred_len = configs.pred_len\n        self.down_sampling_window = configs.down_sampling_window\n        self.layer_norm = nn.LayerNorm(configs.d_model)\n        self.dropout = nn.Dropout(configs.dropout)\n        self.channel_independence = configs.channel_independence\n        if configs.decomp_method == 'moving_avg':",
-        "detail": "models.TimeMixer",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.TimeMixer",
-        "description": "models.TimeMixer",
-        "peekOfCode": "class Model(nn.Module):\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.configs = configs\n        self.task_name = configs.task_name\n        self.seq_len = configs.seq_len\n        self.label_len = configs.label_len\n        self.pred_len = configs.pred_len\n        self.down_sampling_window = configs.down_sampling_window\n        self.channel_independence = configs.channel_independence",
-        "detail": "models.TimeMixer",
-        "documentation": {}
-    },
-    {
-        "label": "TimesBlock",
-        "kind": 6,
-        "importPath": "models.TimesNet",
-        "description": "models.TimesNet",
-        "peekOfCode": "class TimesBlock(nn.Module):\n    def __init__(self, configs):\n        super(TimesBlock, self).__init__()\n        self.seq_len = configs.seq_len\n        self.pred_len = configs.pred_len\n        self.k = configs.top_k\n        # parameter-efficient design\n        self.conv = nn.Sequential(\n            Inception_Block_V1(configs.d_model, configs.d_ff,\n                               num_kernels=configs.num_kernels),",
-        "detail": "models.TimesNet",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.TimesNet",
-        "description": "models.TimesNet",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://openreview.net/pdf?id=ju_Uqw384Oq\n    \"\"\"\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.configs = configs\n        self.task_name = configs.task_name\n        self.seq_len = configs.seq_len\n        self.label_len = configs.label_len",
-        "detail": "models.TimesNet",
-        "documentation": {}
-    },
-    {
-        "label": "FFT_for_Period",
-        "kind": 2,
-        "importPath": "models.TimesNet",
-        "description": "models.TimesNet",
-        "peekOfCode": "def FFT_for_Period(x, k=2):\n    # [B, T, C]\n    xf = torch.fft.rfft(x, dim=1)\n    # find period by amplitudes\n    frequency_list = abs(xf).mean(0).mean(-1)\n    frequency_list[0] = 0\n    _, top_list = torch.topk(frequency_list, k)\n    top_list = top_list.detach().cpu().numpy()\n    period = x.shape[1] // top_list\n    return period, abs(xf).mean(-1)[:, top_list]",
-        "detail": "models.TimesNet",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.Transformer",
-        "description": "models.Transformer",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Vanilla Transformer\n    with O(L^2) complexity\n    Paper link: https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf\n    \"\"\"\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.task_name = configs.task_name\n        self.pred_len = configs.pred_len",
-        "detail": "models.Transformer",
-        "documentation": {}
-    },
-    {
-        "label": "Model",
-        "kind": 6,
-        "importPath": "models.iTransformer",
-        "description": "models.iTransformer",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://arxiv.org/abs/2310.06625\n    \"\"\"\n    def __init__(self, configs):\n        super(Model, self).__init__()\n        self.task_name = configs.task_name\n        self.seq_len = configs.seq_len\n        self.pred_len = configs.pred_len\n        self.output_attention = configs.output_attention",
-        "detail": "models.iTransformer",
         "documentation": {}
     },
     {
