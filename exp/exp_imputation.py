@@ -36,45 +36,6 @@ class Exp_Imputation(Exp_Basic):
         criterion = nn.MSELoss()
         return criterion
 
-    def vali(self, vali_data, vali_loader, criterion):
-        total_loss = []
-        self.model.eval()
-        with torch.no_grad():
-            for i, (batch_x, batch_y, batch_x_mark, batch_y_mark) in enumerate(vali_loader):
-                batch_x = batch_x.float().to(self.device)
-                batch_x_mark = batch_x_mark.float().to(self.device)
-
-                # random mask
-                B, T, N = batch_x.shape
-                """
-                B = batch size
-                T = seq len
-                N = number of features
-                """
-                mask = torch.rand((B, T, N)).to(self.device)
-                mask[mask <= self.args.mask_rate] = 0  # masked
-                mask[mask > self.args.mask_rate] = 1  # remained
-                inp = batch_x.masked_fill(mask == 0, 0)
-
-                outputs = self.model(inp, batch_x_mark, None, None, mask)
-
-                f_dim = -1 if self.args.features == 'MS' else 0
-                outputs = outputs[:, :, f_dim:]
-
-                # add support for MS
-                batch_x = batch_x[:, :, f_dim:]
-                mask = mask[:, :, f_dim:]
-
-                pred = outputs.detach().cpu()
-                true = batch_x.detach().cpu()
-                mask = mask.detach().cpu()
-
-                loss = criterion(pred[mask == 0], true[mask == 0])
-                total_loss.append(loss)
-        total_loss = np.average(total_loss)
-        self.model.train()
-        return total_loss
-
     def train(self, setting):
         train_data, train_loader = self._get_data(flag='train')
         vali_data, vali_loader = self._get_data(flag='val')
@@ -152,6 +113,46 @@ class Exp_Imputation(Exp_Basic):
         self.model.load_state_dict(torch.load(best_model_path))
 
         return self.model
+
+    def vali(self, vali_data, vali_loader, criterion):
+        total_loss = []
+        self.model.eval()
+        with torch.no_grad():
+            for i, (batch_x, batch_y, batch_x_mark, batch_y_mark) in enumerate(vali_loader):
+                batch_x = batch_x.float().to(self.device)
+                batch_x_mark = batch_x_mark.float().to(self.device)
+
+                # random mask
+                B, T, N = batch_x.shape
+                """
+                B = batch size
+                T = seq len
+                N = number of features
+                """
+                mask = torch.rand((B, T, N)).to(self.device)
+                mask[mask <= self.args.mask_rate] = 0  # masked
+                mask[mask > self.args.mask_rate] = 1  # remained
+                inp = batch_x.masked_fill(mask == 0, 0)
+
+                outputs = self.model(inp, batch_x_mark, None, None, mask)
+
+                f_dim = -1 if self.args.features == 'MS' else 0
+                outputs = outputs[:, :, f_dim:]
+
+                # add support for MS
+                batch_x = batch_x[:, :, f_dim:]
+                mask = mask[:, :, f_dim:]
+
+                pred = outputs.detach().cpu()
+                true = batch_x.detach().cpu()
+                mask = mask.detach().cpu()
+
+                loss = criterion(pred[mask == 0], true[mask == 0])
+                total_loss.append(loss)
+        total_loss = np.average(total_loss)
+        self.model.train()
+        return total_loss
+    
 
     def test(self, setting, test=0):
         test_data, test_loader = self._get_data(flag='test')
