@@ -980,22 +980,6 @@
         "documentation": {}
     },
     {
-        "label": "Exp_Anomaly_Detection",
-        "importPath": "exp.exp_anomaly_detection",
-        "description": "exp.exp_anomaly_detection",
-        "isExtraImport": true,
-        "detail": "exp.exp_anomaly_detection",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Classification",
-        "importPath": "exp.exp_classification",
-        "description": "exp.exp_classification",
-        "isExtraImport": true,
-        "detail": "exp.exp_classification",
-        "documentation": {}
-    },
-    {
         "label": "print_args",
         "importPath": "utils.print_args",
         "description": "utils.print_args",
