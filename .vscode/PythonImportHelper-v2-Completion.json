@@ -182,14 +182,6 @@
         "documentation": {}
     },
     {
-        "label": "optim",
-        "importPath": "torch",
-        "description": "torch",
-        "isExtraImport": true,
-        "detail": "torch",
-        "documentation": {}
-    },
-    {
         "label": "Tensor",
         "importPath": "torch",
         "description": "torch",
@@ -239,14 +231,6 @@
     },
     {
         "label": "M4Dataset",
-        "importPath": "data_provider.m4",
-        "description": "data_provider.m4",
-        "isExtraImport": true,
-        "detail": "data_provider.m4",
-        "documentation": {}
-    },
-    {
-        "label": "M4Meta",
         "importPath": "data_provider.m4",
         "description": "data_provider.m4",
         "isExtraImport": true,
@@ -395,14 +379,6 @@
         "documentation": {}
     },
     {
-        "label": "data_provider",
-        "importPath": "data_provider.data_factory",
-        "description": "data_provider.data_factory",
-        "isExtraImport": true,
-        "detail": "data_provider.data_factory",
-        "documentation": {}
-    },
-    {
         "label": "Exp_Basic",
         "importPath": "exp.exp_basic",
         "description": "exp.exp_basic",
@@ -416,38 +392,6 @@
         "description": "exp.exp_basic",
         "isExtraImport": true,
         "detail": "exp.exp_basic",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Basic",
-        "importPath": "exp.exp_basic",
-        "description": "exp.exp_basic",
-        "isExtraImport": true,
-        "detail": "exp.exp_basic",
-        "documentation": {}
-    },
-    {
-        "label": "EarlyStopping",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "adjust_learning_rate",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "visual",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
         "documentation": {}
     },
     {
@@ -530,38 +474,6 @@
         "importPath": "time",
         "description": "time",
         "detail": "time",
-        "documentation": {}
-    },
-    {
-        "label": "mape_loss",
-        "importPath": "utils.losses",
-        "description": "utils.losses",
-        "isExtraImport": true,
-        "detail": "utils.losses",
-        "documentation": {}
-    },
-    {
-        "label": "mase_loss",
-        "importPath": "utils.losses",
-        "description": "utils.losses",
-        "isExtraImport": true,
-        "detail": "utils.losses",
-        "documentation": {}
-    },
-    {
-        "label": "smape_loss",
-        "importPath": "utils.losses",
-        "description": "utils.losses",
-        "isExtraImport": true,
-        "detail": "utils.losses",
-        "documentation": {}
-    },
-    {
-        "label": "M4Summary",
-        "importPath": "utils.m4_summary",
-        "description": "utils.m4_summary",
-        "isExtraImport": true,
-        "detail": "utils.m4_summary",
         "documentation": {}
     },
     {
@@ -924,14 +836,6 @@
         "documentation": {}
     },
     {
-        "label": "Exp_Short_Term_Forecast",
-        "importPath": "exp.exp_short_term_forecasting",
-        "description": "exp.exp_short_term_forecasting",
-        "isExtraImport": true,
-        "detail": "exp.exp_short_term_forecasting",
-        "documentation": {}
-    },
-    {
         "label": "print_args",
         "importPath": "utils.print_args",
         "description": "utils.print_args",
@@ -1171,15 +1075,6 @@
         "description": "exp.exp_long_term_forecasting",
         "peekOfCode": "class Exp_Long_Term_Forecast(Exp_Basic):\n    def __init__(self, args):\n        super(Exp_Long_Term_Forecast, self).__init__(args)\n    def _build_model(self):\n        model = self.model_dict[self.args.model].Model(self.args).float()\n        if self.args.use_multi_gpu and self.args.use_gpu:\n            model = nn.DataParallel(model, device_ids=self.args.device_ids)\n        return model\n    def _get_data(self, flag):\n        data_set, data_loader = data_provider(self.args, flag)",
         "detail": "exp.exp_long_term_forecasting",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Short_Term_Forecast",
-        "kind": 6,
-        "importPath": "exp.exp_short_term_forecasting",
-        "description": "exp.exp_short_term_forecasting",
-        "peekOfCode": "class Exp_Short_Term_Forecast(Exp_Basic):\n    def __init__(self, args):\n        super(Exp_Short_Term_Forecast, self).__init__(args)\n    def _build_model(self):\n        if self.args.data == 'm4':\n            self.args.pred_len = M4Meta.horizons_map[self.args.seasonal_patterns]  # Up to M4 config\n            self.args.seq_len = 2 * self.args.pred_len  # input_len = 2*pred_len\n            self.args.label_len = self.args.pred_len\n            self.args.frequency_map = M4Meta.frequency_map[self.args.seasonal_patterns]\n        model = self.model_dict[self.args.model].Model(self.args).float()",
-        "detail": "exp.exp_short_term_forecasting",
         "documentation": {}
     },
     {
@@ -1835,7 +1730,7 @@
         "kind": 6,
         "importPath": "models.MICN",
         "description": "models.MICN",
-        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://openreview.net/pdf?id=zt53IDUR1U\n    \"\"\"\n    def __init__(self, configs, conv_kernel=[12, 16]):\n        \"\"\"\n        conv_kernel: downsampling and upsampling convolution kernel_size\n        \"\"\"\n        super(Model, self).__init__()\n        decomp_kernel = []  # kernel of decomposition operation",
+        "peekOfCode": "class Model(nn.Module):\n    \"\"\"\n    Paper link: https://openreview.net/pdf?id=zt53IDUR1U\n    \"\"\"\n    def __init__(self, configs, conv_kernel=[12, 16]):\n        \"\"\"\n        conv_kernel: downsampling and upsampling convolution kernel_size\n        \"\"\"\n        super(Model, self).__init__()\n        # Initialize lists for the kernels of the decomposition operation and isometric convolution",
         "detail": "models.MICN",
         "documentation": {}
     },
