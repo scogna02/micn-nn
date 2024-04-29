@@ -13,7 +13,7 @@
             "args": [
                 "--task_name", "long_term_forecast",
                 "--is_training", "1",
-                "--root_path", "/home/matteo/projects/NN/MICN/dataset/weather",
+                "--root_path", "/home/matteo/projects/NN/micn-nn",
                 "--data_path", "weather.csv",
                 "--model_id", "weather_96_96",
                 "--model", "MICN",

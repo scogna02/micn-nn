@@ -371,55 +371,7 @@
         "documentation": {}
     },
     {
-        "label": "Autoformer",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "Transformer",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "TimesNet",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "Nonstationary_Transformer",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "DLinear",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "FEDformer",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "\\",
+        "label": "MICN",
         "importPath": "models",
         "description": "models",
         "isExtraImport": true,
@@ -1199,7 +1151,7 @@
         "kind": 6,
         "importPath": "exp.exp_basic",
         "description": "exp.exp_basic",
-        "peekOfCode": "class Exp_Basic(object):\n    def __init__(self, args):\n        self.args = args\n        self.model_dict = {\n            'TimesNet': TimesNet,\n            'Autoformer': Autoformer,\n            'Transformer': Transformer,\n            'Nonstationary_Transformer': Nonstationary_Transformer,\n            'DLinear': DLinear,\n            'FEDformer': FEDformer,",
+        "peekOfCode": "class Exp_Basic(object):\n    def __init__(self, args):\n        self.args = args\n        self.model_dict = {'MICN': MICN,}\n        self.device = self._acquire_device()\n        self.model = self._build_model().to(self.device)\n    def _build_model(self):\n        raise NotImplementedError\n        return None\n    def _acquire_device(self):",
         "detail": "exp.exp_basic",
         "documentation": {}
     },
