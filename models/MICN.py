@@ -4,8 +4,6 @@ from layers.Embed import DataEmbedding
 from layers.Autoformer_EncDec import series_decomp, series_decomp_multi
 import torch.nn.functional as F
 
-
-
 class MIC(nn.Module):
     """
     MIC layer to extract local and global features
@@ -76,25 +74,6 @@ class MIC(nn.Module):
         x = x_up.permute(0, 2, 1) + input # [B, L, D]
         x = self.norm(x)
         return x
-    
-    def forward_old(self, src):
-        # multi-scale
-        multi = []
-        for i in range(len(self.conv_kernel)):
-            src_out, trend1 = self.decomp[i](src)
-            src_out = self.conv_trans_conv(src_out, self.conv[i], self.conv_trans[i], self.isometric_conv[i])
-            multi.append(src_out)
-
-            # merge
-        mg = torch.tensor([], device=self.device)
-        for i in range(len(self.conv_kernel)):
-            mg = torch.cat((mg, multi[i].unsqueeze(1)), dim=1)
-        mg = self.merge(mg.permute(0, 3, 1, 2)).squeeze(-2).permute(0, 2, 1)
-
-        y = self.norm1(mg)
-        y = self.conv2(self.conv1(y.transpose(-1, 1))).transpose(-1, 1)
-
-        return self.norm2(mg + y)
     
     def forward(self, src):
         # Multi-scale processing
@@ -190,20 +169,6 @@ class Model(nn.Module):
             self.projection = nn.Linear(configs.d_model, configs.c_out, bias=True)
 
     
-    #equivalent to the pytorch model's forward function for forecasting
-    def forecast_old(self, x_enc, x_mark_enc, x_dec, x_mark_dec):
-        # Multi-scale Hybrid Decomposition
-        seasonal_init_enc, trend = self.decomp_multi(x_enc)
-        trend = self.regression(trend.permute(0, 2, 1)).permute(0, 2, 1)
-
-        # embedding
-        zeros = torch.zeros([x_dec.shape[0], self.pred_len, x_dec.shape[2]], device=x_enc.device)
-        seasonal_init_dec = torch.cat([seasonal_init_enc[:, -self.seq_len:, :], zeros], dim=1)
-        dec_out = self.dec_embedding(seasonal_init_dec, x_mark_dec)
-        dec_out = self.conv_trans(dec_out)
-        dec_out = dec_out[:, -self.pred_len:, :] + trend[:, -self.pred_len:, :]
-        return dec_out
-    
     def forecast(self, x_enc, x_mark_enc, x_dec, x_mark_dec):
         # Multi-scale Hybrid Decomposition
         seasonal_components, trend = self.decomp_multi(x_enc)  
@@ -223,19 +188,8 @@ class Model(nn.Module):
         # Combine and extract prediction horizon
         final_prediction = conv_output[:, -self.pred_len:, :] + trend_prediction[:, -self.pred_len:, :]
         return final_prediction
-
-
-    def imputation(self, x_enc, x_mark_enc, x_dec, x_mark_dec, mask):
-        # Multi-scale Hybrid Decomposition
-        seasonal_init_enc, trend = self.decomp_multi(x_enc)
-
-        # embedding
-        dec_out = self.dec_embedding(seasonal_init_enc, x_mark_dec)
-        dec_out = self.conv_trans(dec_out)
-        dec_out = dec_out + trend
-        return dec_out
     
-    def imputation_old(self, x_enc, x_mark_enc, x_dec, x_mark_dec, mask):
+    def imputation(self, x_enc, x_mark_enc, x_dec, x_mark_dec, mask):
         # Multi-scale Hybrid Decomposition
         seasonal_components, trend = self.decomp_multi(x_enc)
 
@@ -253,5 +207,5 @@ class Model(nn.Module):
             dec_out = self.forecast(x_enc, x_mark_enc, x_dec, x_mark_dec)
             return dec_out[:, -self.pred_len:, :]  # [B, L, D]
         if self.task_name == 'imputation':
-           dec_out = self.imputation(x_enc, x_mark_enc, x_dec, x_mark_dec, mask)
-        return None
+            dec_out = self.imputation(x_enc, x_mark_enc, x_dec, x_mark_dec, mask)
+            return dec_out # [B, L, D]
