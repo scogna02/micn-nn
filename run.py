@@ -38,8 +38,8 @@ if __name__ == '__main__':
     parser.add_argument('--seq_len', type=int, default=96, help='input sequence length')
     parser.add_argument('--label_len', type=int, default=48, help='start token length')
     parser.add_argument('--pred_len', type=int, default=96, help='prediction sequence length')
-    parser.add_argument('--seasonal_patterns', type=str, default='Monthly', help='subset for M4')
-    parser.add_argument('--inverse', action='store_true', help='inverse output data', default=False)
+    #parser.add_argument('--seasonal_patterns', type=str, default='Monthly', help='subset for M4')
+    #parser.add_argument('--inverse', action='store_true', help='inverse output data', default=False)
 
     # inputation task
     parser.add_argument('--mask_rate', type=float, default=0.25, help='mask ratio')
@@ -48,8 +48,8 @@ if __name__ == '__main__':
     parser.add_argument('--anomaly_ratio', type=float, default=0.25, help='prior anomaly ratio (%)')
 
     # model define
-    parser.add_argument('--expand', type=int, default=2, help='expansion factor for Mamba') # useless
-    parser.add_argument('--d_conv', type=int, default=4, help='conv kernel size for Mamba') # useless
+    #parser.add_argument('--expand', type=int, default=2, help='expansion factor for Mamba') # useless
+    #parser.add_argument('--d_conv', type=int, default=4, help='conv kernel size for Mamba') # useless
     parser.add_argument('--top_k', type=int, default=5, help='for TimesBlock')
     parser.add_argument('--num_kernels', type=int, default=6, help='for Inception') # useless
     parser.add_argument('--enc_in', type=int, default=7, help='encoder input size')
@@ -70,17 +70,17 @@ if __name__ == '__main__':
                         help='time features encoding, options:[timeF, fixed, learned]')
     parser.add_argument('--activation', type=str, default='gelu', help='activation')
     parser.add_argument('--output_attention', action='store_true', help='whether to output attention in ecoder')
-    parser.add_argument('--channel_independence', type=int, default=1,
-                        help='0: channel dependence 1: channel independence for FreTS model') # useless
-    parser.add_argument('--decomp_method', type=str, default='moving_avg',
-                        help='method of series decompsition, only support moving_avg or dft_decomp')
-    parser.add_argument('--use_norm', type=int, default=1, help='whether to use normalize; True 1 False 0')
-    parser.add_argument('--down_sampling_layers', type=int, default=0, help='num of down sampling layers')
-    parser.add_argument('--down_sampling_window', type=int, default=1, help='down sampling window size')
-    parser.add_argument('--down_sampling_method', type=str, default=None,
-                        help='down sampling method, only support avg, max, conv')
-    parser.add_argument('--seg_len', type=int, default=48,
-                        help='the length of segmen-wise iteration of SegRNN')
+    #parser.add_argument('--channel_independence', type=int, default=1,
+    #                    help='0: channel dependence 1: channel independence for FreTS model') # useless
+    #parser.add_argument('--decomp_method', type=str, default='moving_avg',
+    #                    help='method of series decompsition, only support moving_avg or dft_decomp')
+    #parser.add_argument('--use_norm', type=int, default=1, help='whether to use normalize; True 1 False 0')
+    #parser.add_argument('--down_sampling_layers', type=int, default=0, help='num of down sampling layers')
+    #parser.add_argument('--down_sampling_window', type=int, default=1, help='down sampling window size')
+    #parser.add_argument('--down_sampling_method', type=str, default=None,
+    #                    help='down sampling method, only support avg, max, conv')
+    #parser.add_argument('--seg_len', type=int, default=48,
+    #                    help='the length of segmen-wise iteration of SegRNN')
 
     # optimization
     parser.add_argument('--num_workers', type=int, default=100  , help='data loader num workers')
@@ -130,7 +130,7 @@ if __name__ == '__main__':
         for ii in range(args.itr):
             # setting record of experiments
             exp = Exp(args)  # set experiments
-            setting = '{}_{}_{}_{}_ft{}_sl{}_ll{}_pl{}_dm{}_nh{}_el{}_dl{}_df{}_expand{}_dc{}_fc{}_eb{}_dt{}_{}_{}'.format(
+            setting = '{}_{}_{}_{}_ft{}_sl{}_ll{}_pl{}_dm{}_nh{}_el{}_dl{}_df{}_fc{}_eb{}_dt{}_{}_{}'.format(
                 args.task_name,
                 args.model_id,
                 args.model,
@@ -144,8 +144,6 @@ if __name__ == '__main__':
                 args.e_layers,
                 args.d_layers,
                 args.d_ff,
-                args.expand,
-                args.d_conv,
                 args.factor,
                 args.embed,
                 args.distil,
@@ -159,7 +157,7 @@ if __name__ == '__main__':
             torch.cuda.empty_cache()
     else:
         ii = 0
-        setting = '{}_{}_{}_{}_ft{}_sl{}_ll{}_pl{}_dm{}_nh{}_el{}_dl{}_df{}_expand{}_dc{}_fc{}_eb{}_dt{}_{}_{}'.format(
+        setting = '{}_{}_{}_{}_ft{}_sl{}_ll{}_pl{}_dm{}_nh{}_el{}_dl{}_df{}_fc{}_eb{}_dt{}_{}_{}'.format(
             args.task_name,
             args.model_id,
             args.model,
@@ -173,8 +171,6 @@ if __name__ == '__main__':
             args.e_layers,
             args.d_layers,
             args.d_ff,
-            args.expand,
-            args.d_conv,
             args.factor,
             args.embed,
             args.distil,
