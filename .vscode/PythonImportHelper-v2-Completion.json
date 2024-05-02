@@ -717,7 +717,7 @@
         "kind": 2,
         "importPath": "data_provider.data_factory",
         "description": "data_provider.data_factory",
-        "peekOfCode": "def data_provider(args, flag):\n    Data = data_dict[args.data]\n    timeenc = 0 if args.embed != 'timeF' else 1\n    if flag == 'test':\n        shuffle_flag = False\n        drop_last = True\n        if args.task_name == 'anomaly_detection' or args.task_name == 'classification':\n            batch_size = args.batch_size\n        else:\n            batch_size = 1  # bsz=1 for evaluation",
+        "peekOfCode": "def data_provider(args, flag):\n    Data = data_dict[args.data]\n    timeenc = 0 if args.embed != 'timeF' else 1\n    if flag == 'test':\n        shuffle_flag = False\n        drop_last = True\n        batch_size = 1  # bsz=1 for evaluation\n        freq = args.freq\n    else:\n        shuffle_flag = True",
         "detail": "data_provider.data_factory",
         "documentation": {}
     },
