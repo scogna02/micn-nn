@@ -758,69 +758,6 @@
         "documentation": {}
     },
     {
-        "label": "Dataset_M4",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class Dataset_M4(Dataset):\n    def __init__(self, root_path, flag='pred', size=None,\n                 features='S', data_path='ETTh1.csv',\n                 target='OT', scale=False, inverse=False, timeenc=0, freq='15min',\n                 seasonal_patterns='Yearly'):\n        # size [seq_len, label_len, pred_len]\n        # init\n        self.features = features\n        self.target = target\n        self.scale = scale",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "PSMSegLoader",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class PSMSegLoader(Dataset):\n    def __init__(self, root_path, win_size, step=1, flag=\"train\"):\n        self.flag = flag\n        self.step = step\n        self.win_size = win_size\n        self.scaler = StandardScaler()\n        data = pd.read_csv(os.path.join(root_path, 'train.csv'))\n        data = data.values[:, 1:]\n        data = np.nan_to_num(data)\n        self.scaler.fit(data)",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "MSLSegLoader",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class MSLSegLoader(Dataset):\n    def __init__(self, root_path, win_size, step=1, flag=\"train\"):\n        self.flag = flag\n        self.step = step\n        self.win_size = win_size\n        self.scaler = StandardScaler()\n        data = np.load(os.path.join(root_path, \"MSL_train.npy\"))\n        self.scaler.fit(data)\n        data = self.scaler.transform(data)\n        test_data = np.load(os.path.join(root_path, \"MSL_test.npy\"))",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "SMAPSegLoader",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class SMAPSegLoader(Dataset):\n    def __init__(self, root_path, win_size, step=1, flag=\"train\"):\n        self.flag = flag\n        self.step = step\n        self.win_size = win_size\n        self.scaler = StandardScaler()\n        data = np.load(os.path.join(root_path, \"SMAP_train.npy\"))\n        self.scaler.fit(data)\n        data = self.scaler.transform(data)\n        test_data = np.load(os.path.join(root_path, \"SMAP_test.npy\"))",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "SMDSegLoader",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class SMDSegLoader(Dataset):\n    def __init__(self, root_path, win_size, step=100, flag=\"train\"):\n        self.flag = flag\n        self.step = step\n        self.win_size = win_size\n        self.scaler = StandardScaler()\n        data = np.load(os.path.join(root_path, \"SMD_train.npy\"))\n        self.scaler.fit(data)\n        data = self.scaler.transform(data)\n        test_data = np.load(os.path.join(root_path, \"SMD_test.npy\"))",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "SWATSegLoader",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class SWATSegLoader(Dataset):\n    def __init__(self, root_path, win_size, step=1, flag=\"train\"):\n        self.flag = flag\n        self.step = step\n        self.win_size = win_size\n        self.scaler = StandardScaler()\n        train_data = pd.read_csv(os.path.join(root_path, 'swat_train2.csv'))\n        test_data = pd.read_csv(os.path.join(root_path, 'swat2.csv'))\n        labels = test_data.values[:, -1:]\n        train_data = train_data.values[:, :-1]",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "UEAloader",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class UEAloader(Dataset):\n    \"\"\"\n    Dataset class for datasets included in:\n        Time Series Classification Archive (www.timeseriesclassification.com)\n    Argument:\n        limit_size: float in (0, 1) for debug\n    Attributes:\n        all_df: (num_samples * seq_len, num_columns) dataframe indexed by integer indices, with multiple rows corresponding to the same index (sample).\n            Each row is a time step; Each column contains either metadata (e.g. timestamp) or a feature.\n        feature_df: (num_samples * seq_len, feat_dim) dataframe; contains the subset of columns of `all_df` which correspond to selected features",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
         "label": "Exp_Basic",
         "kind": 6,
         "importPath": "exp.exp_basic",
