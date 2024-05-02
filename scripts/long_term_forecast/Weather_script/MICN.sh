@@ -5,10 +5,10 @@ model_name=MICN
 python3 -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
-  --root_path /home/matteo/projects/NN/MICN/dataset/weather \
+  --root_path dataset \
   --data_path weather.csv \
   --model_id weather_96_96 \
-  --model $model_name \
+  --model MICN \
   --data custom \
   --features M \
   --seq_len 96 \
