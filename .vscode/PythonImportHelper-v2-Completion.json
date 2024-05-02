@@ -24,62 +24,6 @@
         "documentation": {}
     },
     {
-        "label": "Dataset_M4",
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "isExtraImport": true,
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "PSMSegLoader",
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "isExtraImport": true,
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "\\",
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "isExtraImport": true,
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "collate_fn",
-        "importPath": "data_provider.uea",
-        "description": "data_provider.uea",
-        "isExtraImport": true,
-        "detail": "data_provider.uea",
-        "documentation": {}
-    },
-    {
-        "label": "subsample",
-        "importPath": "data_provider.uea",
-        "description": "data_provider.uea",
-        "isExtraImport": true,
-        "detail": "data_provider.uea",
-        "documentation": {}
-    },
-    {
-        "label": "interpolate_missing",
-        "importPath": "data_provider.uea",
-        "description": "data_provider.uea",
-        "isExtraImport": true,
-        "detail": "data_provider.uea",
-        "documentation": {}
-    },
-    {
-        "label": "Normalizer",
-        "importPath": "data_provider.uea",
-        "description": "data_provider.uea",
-        "isExtraImport": true,
-        "detail": "data_provider.uea",
-        "documentation": {}
-    },
-    {
         "label": "DataLoader",
         "importPath": "torch.utils.data",
         "description": "torch.utils.data",
@@ -259,6 +203,30 @@
         "description": "data_provider.m4",
         "isExtraImport": true,
         "detail": "data_provider.m4",
+        "documentation": {}
+    },
+    {
+        "label": "subsample",
+        "importPath": "data_provider.uea",
+        "description": "data_provider.uea",
+        "isExtraImport": true,
+        "detail": "data_provider.uea",
+        "documentation": {}
+    },
+    {
+        "label": "interpolate_missing",
+        "importPath": "data_provider.uea",
+        "description": "data_provider.uea",
+        "isExtraImport": true,
+        "detail": "data_provider.uea",
+        "documentation": {}
+    },
+    {
+        "label": "Normalizer",
+        "importPath": "data_provider.uea",
+        "description": "data_provider.uea",
+        "isExtraImport": true,
+        "detail": "data_provider.uea",
         "documentation": {}
     },
     {
@@ -650,6 +618,14 @@
         "documentation": {}
     },
     {
+        "label": "weight_norm",
+        "importPath": "torch.nn.utils",
+        "description": "torch.nn.utils",
+        "isExtraImport": true,
+        "detail": "torch.nn.utils",
+        "documentation": {}
+    },
+    {
         "label": "List",
         "importPath": "typing",
         "description": "typing",
@@ -747,14 +723,6 @@
         "documentation": {}
     },
     {
-        "label": "DataEmbedding",
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "isExtraImport": true,
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
         "label": "TriangularCausalMask",
         "importPath": "utils.masking",
         "description": "utils.masking",
@@ -779,19 +747,27 @@
         "documentation": {}
     },
     {
-        "label": "series_decomp",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
+        "label": "DataEmbedding",
+        "importPath": "layers.layers",
+        "description": "layers.layers",
         "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
+        "detail": "layers.layers",
+        "documentation": {}
+    },
+    {
+        "label": "series_decomp",
+        "importPath": "layers.layers",
+        "description": "layers.layers",
+        "isExtraImport": true,
+        "detail": "layers.layers",
         "documentation": {}
     },
     {
         "label": "series_decomp_multi",
-        "importPath": "layers.Autoformer_EncDec",
-        "description": "layers.Autoformer_EncDec",
+        "importPath": "layers.layers",
+        "description": "layers.layers",
         "isExtraImport": true,
-        "detail": "layers.Autoformer_EncDec",
+        "detail": "layers.layers",
         "documentation": {}
     },
     {
@@ -866,7 +842,7 @@
         "kind": 5,
         "importPath": "data_provider.data_factory",
         "description": "data_provider.data_factory",
-        "peekOfCode": "data_dict = {\n    'ETTh1': Dataset_ETT_hour,\n    'ETTh2': Dataset_ETT_hour,\n    'ETTm1': Dataset_ETT_minute,\n    'ETTm2': Dataset_ETT_minute,\n    'custom': Dataset_Custom,\n    'm4': Dataset_M4,\n    'PSM': PSMSegLoader,\n    'MSL': MSLSegLoader,\n    'SMAP': SMAPSegLoader,",
+        "peekOfCode": "data_dict = {\n    'ETTh1': Dataset_ETT_hour,\n    'ETTh2': Dataset_ETT_hour,\n    'ETTm1': Dataset_ETT_minute,\n    'ETTm2': Dataset_ETT_minute,\n    'custom': Dataset_Custom,\n}\ndef data_provider(args, flag):\n    Data = data_dict[args.data]\n    timeenc = 0 if args.embed != 'timeF' else 1",
         "detail": "data_provider.data_factory",
         "documentation": {}
     },
@@ -1393,33 +1369,6 @@
         "documentation": {}
     },
     {
-        "label": "DataEmbedding_inverted",
-        "kind": 6,
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "peekOfCode": "class DataEmbedding_inverted(nn.Module):\n    def __init__(self, c_in, d_model, embed_type='fixed', freq='h', dropout=0.1):\n        super(DataEmbedding_inverted, self).__init__()\n        self.value_embedding = nn.Linear(c_in, d_model)\n        self.dropout = nn.Dropout(p=dropout)\n    def forward(self, x, x_mark):\n        x = x.permute(0, 2, 1)\n        # x: [Batch Variate Time]\n        if x_mark is None:\n            x = self.value_embedding(x)",
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding_wo_pos",
-        "kind": 6,
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "peekOfCode": "class DataEmbedding_wo_pos(nn.Module):\n    def __init__(self, c_in, d_model, embed_type='fixed', freq='h', dropout=0.1):\n        super(DataEmbedding_wo_pos, self).__init__()\n        self.value_embedding = TokenEmbedding(c_in=c_in, d_model=d_model)\n        self.position_embedding = PositionalEmbedding(d_model=d_model)\n        self.temporal_embedding = TemporalEmbedding(d_model=d_model, embed_type=embed_type,\n                                                    freq=freq) if embed_type != 'timeF' else TimeFeatureEmbedding(\n            d_model=d_model, embed_type=embed_type, freq=freq)\n        self.dropout = nn.Dropout(p=dropout)\n    def forward(self, x, x_mark):",
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
-        "label": "PatchEmbedding",
-        "kind": 6,
-        "importPath": "layers.Embed",
-        "description": "layers.Embed",
-        "peekOfCode": "class PatchEmbedding(nn.Module):\n    def __init__(self, d_model, patch_len, stride, padding, dropout):\n        super(PatchEmbedding, self).__init__()\n        # Patching\n        self.patch_len = patch_len\n        self.stride = stride\n        self.padding_patch_layer = nn.ReplicationPad1d((0, padding))\n        # Backbone, Input encoding: projection of feature vectors onto a d-dim vector space\n        self.value_embedding = nn.Linear(patch_len, d_model, bias=False)\n        # Positional embedding",
-        "detail": "layers.Embed",
-        "documentation": {}
-    },
-    {
         "label": "FourierBlock",
         "kind": 6,
         "importPath": "layers.FourierCorrelation",
@@ -1705,6 +1654,87 @@
         "description": "layers.Transformer_EncDec",
         "peekOfCode": "class Decoder(nn.Module):\n    def __init__(self, layers, norm_layer=None, projection=None):\n        super(Decoder, self).__init__()\n        self.layers = nn.ModuleList(layers)\n        self.norm = norm_layer\n        self.projection = projection\n    def forward(self, x, cross, x_mask=None, cross_mask=None, tau=None, delta=None):\n        for layer in self.layers:\n            x = layer(x, cross, x_mask=x_mask, cross_mask=cross_mask, tau=tau, delta=delta)\n        if self.norm is not None:",
         "detail": "layers.Transformer_EncDec",
+        "documentation": {}
+    },
+    {
+        "label": "PositionalEmbedding",
+        "kind": 6,
+        "importPath": "layers.layers",
+        "description": "layers.layers",
+        "peekOfCode": "class PositionalEmbedding(nn.Module):\n    def __init__(self, d_model, max_len=5000):\n        super(PositionalEmbedding, self).__init__()\n        # Compute the positional encodings once in log space.\n        pe = torch.zeros(max_len, d_model).float()\n        pe.require_grad = False\n        position = torch.arange(0, max_len).float().unsqueeze(1)\n        div_term = (torch.arange(0, d_model, 2).float()\n                    * -(math.log(10000.0) / d_model)).exp()\n        pe[:, 0::2] = torch.sin(position * div_term)",
+        "detail": "layers.layers",
+        "documentation": {}
+    },
+    {
+        "label": "TokenEmbedding",
+        "kind": 6,
+        "importPath": "layers.layers",
+        "description": "layers.layers",
+        "peekOfCode": "class TokenEmbedding(nn.Module):\n    def __init__(self, c_in, d_model):\n        super(TokenEmbedding, self).__init__()\n        padding = 1 if torch.__version__ >= '1.5.0' else 2\n        self.tokenConv = nn.Conv1d(in_channels=c_in, out_channels=d_model,\n                                   kernel_size=3, padding=padding, padding_mode='circular', bias=False)\n        for m in self.modules():\n            if isinstance(m, nn.Conv1d):\n                nn.init.kaiming_normal_(\n                    m.weight, mode='fan_in', nonlinearity='leaky_relu')",
+        "detail": "layers.layers",
+        "documentation": {}
+    },
+    {
+        "label": "FixedEmbedding",
+        "kind": 6,
+        "importPath": "layers.layers",
+        "description": "layers.layers",
+        "peekOfCode": "class FixedEmbedding(nn.Module):\n    def __init__(self, c_in, d_model):\n        super(FixedEmbedding, self).__init__()\n        w = torch.zeros(c_in, d_model).float()\n        w.require_grad = False\n        position = torch.arange(0, c_in).float().unsqueeze(1)\n        div_term = (torch.arange(0, d_model, 2).float()\n                    * -(math.log(10000.0) / d_model)).exp()\n        w[:, 0::2] = torch.sin(position * div_term)\n        w[:, 1::2] = torch.cos(position * div_term)",
+        "detail": "layers.layers",
+        "documentation": {}
+    },
+    {
+        "label": "TemporalEmbedding",
+        "kind": 6,
+        "importPath": "layers.layers",
+        "description": "layers.layers",
+        "peekOfCode": "class TemporalEmbedding(nn.Module):\n    def __init__(self, d_model, embed_type='fixed', freq='h'):\n        super(TemporalEmbedding, self).__init__()\n        minute_size = 4\n        hour_size = 24\n        weekday_size = 7\n        day_size = 32\n        month_size = 13\n        Embed = FixedEmbedding if embed_type == 'fixed' else nn.Embedding\n        if freq == 't':",
+        "detail": "layers.layers",
+        "documentation": {}
+    },
+    {
+        "label": "TimeFeatureEmbedding",
+        "kind": 6,
+        "importPath": "layers.layers",
+        "description": "layers.layers",
+        "peekOfCode": "class TimeFeatureEmbedding(nn.Module):\n    def __init__(self, d_model, embed_type='timeF', freq='h'):\n        super(TimeFeatureEmbedding, self).__init__()\n        freq_map = {'h': 4, 't': 5, 's': 6,\n                    'm': 1, 'a': 1, 'w': 2, 'd': 3, 'b': 3}\n        d_inp = freq_map[freq]\n        self.embed = nn.Linear(d_inp, d_model, bias=False)\n    def forward(self, x):\n        return self.embed(x)\nclass DataEmbedding(nn.Module):",
+        "detail": "layers.layers",
+        "documentation": {}
+    },
+    {
+        "label": "DataEmbedding",
+        "kind": 6,
+        "importPath": "layers.layers",
+        "description": "layers.layers",
+        "peekOfCode": "class DataEmbedding(nn.Module):\n    def __init__(self, c_in, d_model, embed_type='fixed', freq='h', dropout=0.1):\n        super(DataEmbedding, self).__init__()\n        self.value_embedding = TokenEmbedding(c_in=c_in, d_model=d_model)\n        self.position_embedding = PositionalEmbedding(d_model=d_model)\n        self.temporal_embedding = TemporalEmbedding(d_model=d_model, embed_type=embed_type,\n                                                    freq=freq) if embed_type != 'timeF' else TimeFeatureEmbedding(\n            d_model=d_model, embed_type=embed_type, freq=freq)\n        self.dropout = nn.Dropout(p=dropout)\n    def forward(self, x, x_mark):",
+        "detail": "layers.layers",
+        "documentation": {}
+    },
+    {
+        "label": "moving_avg",
+        "kind": 6,
+        "importPath": "layers.layers",
+        "description": "layers.layers",
+        "peekOfCode": "class moving_avg(nn.Module):\n    \"\"\"\n    Moving average block to highlight the trend of time series\n    \"\"\"\n    def __init__(self, kernel_size, stride):\n        super(moving_avg, self).__init__()\n        self.kernel_size = kernel_size\n        self.avg = nn.AvgPool1d(kernel_size=kernel_size, stride=stride, padding=0)\n    def forward(self, x):\n        # padding on the both ends of time series",
+        "detail": "layers.layers",
+        "documentation": {}
+    },
+    {
+        "label": "series_decomp",
+        "kind": 6,
+        "importPath": "layers.layers",
+        "description": "layers.layers",
+        "peekOfCode": "class series_decomp(nn.Module):\n    \"\"\"\n    Series decomposition block\n    \"\"\"\n    def __init__(self, kernel_size):\n        super(series_decomp, self).__init__()\n        self.moving_avg = moving_avg(kernel_size, stride=1)\n    def forward(self, x):\n        moving_mean = self.moving_avg(x)\n        res = x - moving_mean",
+        "detail": "layers.layers",
+        "documentation": {}
+    },
+    {
+        "label": "series_decomp_multi",
+        "kind": 6,
+        "importPath": "layers.layers",
+        "description": "layers.layers",
+        "peekOfCode": "class series_decomp_multi(nn.Module):\n    \"\"\"\n    Multiple Series decomposition block from FEDformer\n    \"\"\"\n    def __init__(self, kernel_size):\n        super(series_decomp_multi, self).__init__()\n        self.kernel_size = kernel_size\n        self.series_decomp = [series_decomp(kernel) for kernel in kernel_size]\n    def forward(self, x):\n        moving_mean = []",
+        "detail": "layers.layers",
         "documentation": {}
     },
     {
