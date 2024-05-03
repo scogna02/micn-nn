@@ -7,8 +7,7 @@ data_dict = {
     'ETTh2': Dataset_ETT_hour,
     'ETTm1': Dataset_ETT_minute,
     'ETTm2': Dataset_ETT_minute,
-    'custom': Dataset_Custom,
-    'm4': Dataset_M4
+    'custom': Dataset_Custom
 }
 
 
@@ -61,8 +60,8 @@ def data_provider(args, flag):
         )
         return data_set, data_loader
     else:
-        if args.data == 'm4':
-            drop_last = False
+        #if args.data == 'm4':
+        #    drop_last = False
         data_set = Data(
             args = args,
             root_path=args.root_path,
