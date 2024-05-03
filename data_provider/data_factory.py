@@ -1,4 +1,5 @@
 from data_provider.data_loader import Dataset_ETT_hour, Dataset_ETT_minute, Dataset_Custom
+#from data_provider.uea import collate_fn
 from torch.utils.data import DataLoader
 
 data_dict = {
@@ -17,7 +18,10 @@ def data_provider(args, flag):
     if flag == 'test':
         shuffle_flag = False
         drop_last = True
-        batch_size = 1  # bsz=1 for evaluation
+        if args.task_name == 'anomaly_detection' or args.task_name == 'classification':
+            batch_size = args.batch_size
+        else:
+            batch_size = 1  # bsz=1 for evaluation
         freq = args.freq
     else:
         shuffle_flag = True
@@ -25,7 +29,41 @@ def data_provider(args, flag):
         batch_size = args.batch_size  # bsz for train and valid
         freq = args.freq
 
-    data_set = Data(
+    if args.task_name == 'anomaly_detection':
+        drop_last = False
+        data_set = Data(
+            root_path=args.root_path,
+            win_size=args.seq_len,
+            flag=flag,
+        )
+        print(flag, len(data_set))
+        data_loader = DataLoader(
+            data_set,
+            batch_size=batch_size,
+            shuffle=shuffle_flag,
+            num_workers=args.num_workers,
+            drop_last=drop_last)
+        return data_set, data_loader
+    elif args.task_name == 'classification':
+        drop_last = False
+        data_set = Data(
+            root_path=args.root_path,
+            flag=flag,
+        )
+
+        data_loader = DataLoader(
+            data_set,
+            batch_size=batch_size,
+            shuffle=shuffle_flag,
+            num_workers=args.num_workers,
+            drop_last=drop_last,
+            collate_fn=lambda x: collate_fn(x, max_len=args.seq_len)
+        )
+        return data_set, data_loader
+    else:
+        if args.data == 'm4':
+            drop_last = False
+        data_set = Data(
             root_path=args.root_path,
             data_path=args.data_path,
             flag=flag,
@@ -36,11 +74,11 @@ def data_provider(args, flag):
             freq=freq,
             seasonal_patterns=args.seasonal_patterns
         )
-    print(flag, len(data_set))
-    data_loader = DataLoader(
-        data_set,
-        batch_size=batch_size,
-        shuffle=shuffle_flag,
-        num_workers=args.num_workers,
-        drop_last=drop_last)
-    return data_set, data_loader
+        print(flag, len(data_set))
+        data_loader = DataLoader(
+            data_set,
+            batch_size=batch_size,
+            shuffle=shuffle_flag,
+            num_workers=args.num_workers,
+            drop_last=drop_last)
+        return data_set, data_loader
