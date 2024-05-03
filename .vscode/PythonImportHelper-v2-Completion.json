@@ -104,30 +104,6 @@
         "documentation": {}
     },
     {
-        "label": "DataLoader",
-        "importPath": "torch.utils.data",
-        "description": "torch.utils.data",
-        "isExtraImport": true,
-        "detail": "torch.utils.data",
-        "documentation": {}
-    },
-    {
-        "label": "Dataset",
-        "importPath": "torch.utils.data",
-        "description": "torch.utils.data",
-        "isExtraImport": true,
-        "detail": "torch.utils.data",
-        "documentation": {}
-    },
-    {
-        "label": "DataLoader",
-        "importPath": "torch.utils.data",
-        "description": "torch.utils.data",
-        "isExtraImport": true,
-        "detail": "torch.utils.data",
-        "documentation": {}
-    },
-    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -214,22 +190,6 @@
         "documentation": {}
     },
     {
-        "label": "StandardScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "time_features",
-        "importPath": "utils.timefeatures",
-        "description": "utils.timefeatures",
-        "isExtraImport": true,
-        "detail": "utils.timefeatures",
-        "documentation": {}
-    },
-    {
         "label": "time_features",
         "importPath": "utils.timefeatures",
         "description": "utils.timefeatures",
@@ -251,14 +211,6 @@
         "description": "data_provider.m4",
         "isExtraImport": true,
         "detail": "data_provider.m4",
-        "documentation": {}
-    },
-    {
-        "label": "load_from_tsfile_to_dataframe",
-        "importPath": "sktime.datasets",
-        "description": "sktime.datasets",
-        "isExtraImport": true,
-        "detail": "sktime.datasets",
         "documentation": {}
     },
     {
@@ -347,30 +299,6 @@
         "documentation": {}
     },
     {
-        "label": "Dataset_ETT_hour",
-        "importPath": "data_provider2.data_loader",
-        "description": "data_provider2.data_loader",
-        "isExtraImport": true,
-        "detail": "data_provider2.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "Dataset_ETT_minute",
-        "importPath": "data_provider2.data_loader",
-        "description": "data_provider2.data_loader",
-        "isExtraImport": true,
-        "detail": "data_provider2.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "Dataset_Custom",
-        "importPath": "data_provider2.data_loader",
-        "description": "data_provider2.data_loader",
-        "isExtraImport": true,
-        "detail": "data_provider2.data_loader",
-        "documentation": {}
-    },
-    {
         "label": "MICN",
         "importPath": "models",
         "description": "models",
@@ -380,18 +308,18 @@
     },
     {
         "label": "data_provider",
-        "importPath": "data_provider2.data_factory",
-        "description": "data_provider2.data_factory",
+        "importPath": "data_provider.data_factory",
+        "description": "data_provider.data_factory",
         "isExtraImport": true,
-        "detail": "data_provider2.data_factory",
+        "detail": "data_provider.data_factory",
         "documentation": {}
     },
     {
         "label": "data_provider",
-        "importPath": "data_provider2.data_factory",
-        "description": "data_provider2.data_factory",
+        "importPath": "data_provider.data_factory",
+        "description": "data_provider.data_factory",
         "isExtraImport": true,
-        "detail": "data_provider2.data_factory",
+        "detail": "data_provider.data_factory",
         "documentation": {}
     },
     {
@@ -805,51 +733,6 @@
         "description": "data_provider.uea",
         "peekOfCode": "def subsample(y, limit=256, factor=2):\n    \"\"\"\n    If a given Series is longer than `limit`, returns subsampled sequence by the specified integer factor\n    \"\"\"\n    if len(y) > limit:\n        return y[::factor].reset_index(drop=True)\n    return y",
         "detail": "data_provider.uea",
-        "documentation": {}
-    },
-    {
-        "label": "data_provider",
-        "kind": 2,
-        "importPath": "data_provider2.data_factory",
-        "description": "data_provider2.data_factory",
-        "peekOfCode": "def data_provider(args, flag):\n    Data = data_dict[args.data]\n    timeenc = 0 if args.embed != 'timeF' else 1\n    if flag == 'test':\n        shuffle_flag = False\n        drop_last = True\n        batch_size = 1  # bsz=1 for evaluation\n        freq = args.freq\n    else:\n        shuffle_flag = True",
-        "detail": "data_provider2.data_factory",
-        "documentation": {}
-    },
-    {
-        "label": "data_dict",
-        "kind": 5,
-        "importPath": "data_provider2.data_factory",
-        "description": "data_provider2.data_factory",
-        "peekOfCode": "data_dict = {\n    'ETTh1': Dataset_ETT_hour,\n    'ETTh2': Dataset_ETT_hour,\n    'ETTm1': Dataset_ETT_minute,\n    'ETTm2': Dataset_ETT_minute,\n    'custom': Dataset_Custom\n}\ndef data_provider(args, flag):\n    Data = data_dict[args.data]\n    timeenc = 0 if args.embed != 'timeF' else 1",
-        "detail": "data_provider2.data_factory",
-        "documentation": {}
-    },
-    {
-        "label": "Dataset_ETT_hour",
-        "kind": 6,
-        "importPath": "data_provider2.data_loader",
-        "description": "data_provider2.data_loader",
-        "peekOfCode": "class Dataset_ETT_hour(Dataset):\n    def __init__(self, root_path, flag='train', size=None,\n                 features='S', data_path='ETTh1.csv',\n                 target='OT', scale=True, timeenc=0, freq='h', seasonal_patterns=None):\n        # size [seq_len, label_len, pred_len]\n        # info\n        if size == None:\n            self.seq_len = 24 * 4 * 4\n            self.label_len = 24 * 4\n            self.pred_len = 24 * 4",
-        "detail": "data_provider2.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "Dataset_ETT_minute",
-        "kind": 6,
-        "importPath": "data_provider2.data_loader",
-        "description": "data_provider2.data_loader",
-        "peekOfCode": "class Dataset_ETT_minute(Dataset):\n    def __init__(self, root_path, flag='train', size=None,\n                 features='S', data_path='ETTm1.csv',\n                 target='OT', scale=True, timeenc=0, freq='t', seasonal_patterns=None):\n        # size [seq_len, label_len, pred_len]\n        # info\n        if size == None:\n            self.seq_len = 24 * 4 * 4\n            self.label_len = 24 * 4\n            self.pred_len = 24 * 4",
-        "detail": "data_provider2.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "Dataset_Custom",
-        "kind": 6,
-        "importPath": "data_provider2.data_loader",
-        "description": "data_provider2.data_loader",
-        "peekOfCode": "class Dataset_Custom(Dataset):\n    def __init__(self, root_path, flag='train', size=None,\n                 features='S', data_path='ETTh1.csv',\n                 target='OT', scale=True, timeenc=0, freq='h', seasonal_patterns=None):\n        # size [seq_len, label_len, pred_len]\n        # info\n        if size == None:\n            self.seq_len = 24 * 4 * 4\n            self.label_len = 24 * 4\n            self.pred_len = 24 * 4",
-        "detail": "data_provider2.data_loader",
         "documentation": {}
     },
     {
