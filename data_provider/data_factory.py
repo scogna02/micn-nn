@@ -1,5 +1,6 @@
-from data_provider.data_loader import Dataset_ETT_hour, Dataset_ETT_minute, Dataset_Custom
-#from data_provider.uea import collate_fn
+from data_provider.data_loader import Dataset_ETT_hour, Dataset_ETT_minute, Dataset_Custom, Dataset_M4, PSMSegLoader, \
+    MSLSegLoader, SMAPSegLoader, SMDSegLoader, SWATSegLoader, UEAloader
+from data_provider.uea import collate_fn
 from torch.utils.data import DataLoader
 
 data_dict = {
@@ -8,6 +9,13 @@ data_dict = {
     'ETTm1': Dataset_ETT_minute,
     'ETTm2': Dataset_ETT_minute,
     'custom': Dataset_Custom,
+    'm4': Dataset_M4,
+    'PSM': PSMSegLoader,
+    'MSL': MSLSegLoader,
+    'SMAP': SMAPSegLoader,
+    'SMD': SMDSegLoader,
+    'SWAT': SWATSegLoader,
+    'UEA': UEAloader
 }
 
 
@@ -18,10 +26,7 @@ def data_provider(args, flag):
     if flag == 'test':
         shuffle_flag = False
         drop_last = True
-        if args.task_name == 'anomaly_detection' or args.task_name == 'classification':
-            batch_size = args.batch_size
-        else:
-            batch_size = 1  # bsz=1 for evaluation
+        batch_size = args.batch_size
         freq = args.freq
     else:
         shuffle_flag = True
@@ -32,6 +37,7 @@ def data_provider(args, flag):
     if args.task_name == 'anomaly_detection':
         drop_last = False
         data_set = Data(
+            args = args,
             root_path=args.root_path,
             win_size=args.seq_len,
             flag=flag,
@@ -47,6 +53,7 @@ def data_provider(args, flag):
     elif args.task_name == 'classification':
         drop_last = False
         data_set = Data(
+            args = args,
             root_path=args.root_path,
             flag=flag,
         )
@@ -64,6 +71,7 @@ def data_provider(args, flag):
         if args.data == 'm4':
             drop_last = False
         data_set = Data(
+            args = args,
             root_path=args.root_path,
             data_path=args.data_path,
             flag=flag,
