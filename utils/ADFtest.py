@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 import os
-from statsmodels.tsa.stattools import adfuller
-from arch.unitroot import ADF
+#from statsmodels.tsa.stattools import adfuller
+#from arch.unitroot import ADF
 
 def calculate_ADF(root_path,data_path):
     df_raw = pd.read_csv(os.path.join(root_path,data_path))

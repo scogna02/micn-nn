@@ -24,62 +24,6 @@
         "documentation": {}
     },
     {
-        "label": "Dataset_M4",
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "isExtraImport": true,
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "PSMSegLoader",
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "isExtraImport": true,
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "\\",
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "isExtraImport": true,
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "collate_fn",
-        "importPath": "data_provider.uea",
-        "description": "data_provider.uea",
-        "isExtraImport": true,
-        "detail": "data_provider.uea",
-        "documentation": {}
-    },
-    {
-        "label": "subsample",
-        "importPath": "data_provider.uea",
-        "description": "data_provider.uea",
-        "isExtraImport": true,
-        "detail": "data_provider.uea",
-        "documentation": {}
-    },
-    {
-        "label": "interpolate_missing",
-        "importPath": "data_provider.uea",
-        "description": "data_provider.uea",
-        "isExtraImport": true,
-        "detail": "data_provider.uea",
-        "documentation": {}
-    },
-    {
-        "label": "Normalizer",
-        "importPath": "data_provider.uea",
-        "description": "data_provider.uea",
-        "isExtraImport": true,
-        "detail": "data_provider.uea",
-        "documentation": {}
-    },
-    {
         "label": "DataLoader",
         "importPath": "torch.utils.data",
         "description": "torch.utils.data",
@@ -96,14 +40,6 @@
         "documentation": {}
     },
     {
-        "label": "DataLoader",
-        "importPath": "torch.utils.data",
-        "description": "torch.utils.data",
-        "isExtraImport": true,
-        "detail": "torch.utils.data",
-        "documentation": {}
-    },
-    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -113,120 +49,12 @@
         "documentation": {}
     },
     {
-        "label": "numpy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "array",
-        "importPath": "numpy",
-        "description": "numpy",
-        "isExtraImport": true,
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "zeros",
-        "importPath": "numpy",
-        "description": "numpy",
-        "isExtraImport": true,
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "full",
-        "importPath": "numpy",
-        "description": "numpy",
-        "isExtraImport": true,
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "argmin",
-        "importPath": "numpy",
-        "description": "numpy",
-        "isExtraImport": true,
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "inf",
-        "importPath": "numpy",
-        "description": "numpy",
-        "isExtraImport": true,
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "ndim",
-        "importPath": "numpy",
-        "description": "numpy",
-        "isExtraImport": true,
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
         "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "pandas",
         "description": "pandas",
         "detail": "pandas",
-        "documentation": {}
-    },
-    {
-        "label": "glob",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "glob",
-        "description": "glob",
-        "detail": "glob",
-        "documentation": {}
-    },
-    {
-        "label": "glob",
-        "importPath": "glob",
-        "description": "glob",
-        "isExtraImport": true,
-        "detail": "glob",
-        "documentation": {}
-    },
-    {
-        "label": "re",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "re",
-        "description": "re",
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "torch",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "torch",
-        "description": "torch",
-        "detail": "torch",
-        "documentation": {}
-    },
-    {
-        "label": "optim",
-        "importPath": "torch",
-        "description": "torch",
-        "isExtraImport": true,
-        "detail": "torch",
-        "documentation": {}
-    },
-    {
-        "label": "optim",
-        "importPath": "torch",
-        "description": "torch",
-        "isExtraImport": true,
-        "detail": "torch",
         "documentation": {}
     },
     {
@@ -243,30 +71,6 @@
         "description": "utils.timefeatures",
         "isExtraImport": true,
         "detail": "utils.timefeatures",
-        "documentation": {}
-    },
-    {
-        "label": "M4Dataset",
-        "importPath": "data_provider.m4",
-        "description": "data_provider.m4",
-        "isExtraImport": true,
-        "detail": "data_provider.m4",
-        "documentation": {}
-    },
-    {
-        "label": "M4Meta",
-        "importPath": "data_provider.m4",
-        "description": "data_provider.m4",
-        "isExtraImport": true,
-        "detail": "data_provider.m4",
-        "documentation": {}
-    },
-    {
-        "label": "load_from_tsfile_to_dataframe",
-        "importPath": "sktime.datasets",
-        "description": "sktime.datasets",
-        "isExtraImport": true,
-        "detail": "sktime.datasets",
         "documentation": {}
     },
     {
@@ -303,79 +107,28 @@
         "documentation": {}
     },
     {
-        "label": "logging",
+        "label": "torch",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
         "documentation": {}
     },
     {
-        "label": "OrderedDict",
-        "importPath": "collections",
-        "description": "collections",
+        "label": "optim",
+        "importPath": "torch",
+        "description": "torch",
         "isExtraImport": true,
-        "detail": "collections",
+        "detail": "torch",
         "documentation": {}
     },
     {
-        "label": "dataclass",
-        "importPath": "dataclasses",
-        "description": "dataclasses",
+        "label": "optim",
+        "importPath": "torch",
+        "description": "torch",
         "isExtraImport": true,
-        "detail": "dataclasses",
-        "documentation": {}
-    },
-    {
-        "label": "patoolib",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "patoolib",
-        "description": "patoolib",
-        "detail": "patoolib",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "pathlib",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "urllib",
-        "description": "urllib",
-        "isExtraImport": true,
-        "detail": "urllib",
+        "detail": "torch",
         "documentation": {}
     },
     {
@@ -501,6 +254,63 @@
         "documentation": {}
     },
     {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "array",
+        "importPath": "numpy",
+        "description": "numpy",
+        "isExtraImport": true,
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "zeros",
+        "importPath": "numpy",
+        "description": "numpy",
+        "isExtraImport": true,
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "full",
+        "importPath": "numpy",
+        "description": "numpy",
+        "isExtraImport": true,
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "argmin",
+        "importPath": "numpy",
+        "description": "numpy",
+        "isExtraImport": true,
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "inf",
+        "importPath": "numpy",
+        "description": "numpy",
+        "isExtraImport": true,
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "ndim",
+        "importPath": "numpy",
+        "description": "numpy",
+        "isExtraImport": true,
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
         "label": "dtw",
         "importPath": "utils.dtw_metric",
         "description": "utils.dtw_metric",
@@ -550,19 +360,11 @@
         "documentation": {}
     },
     {
-        "label": "adfuller",
-        "importPath": "statsmodels.tsa.stattools",
-        "description": "statsmodels.tsa.stattools",
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
         "isExtraImport": true,
-        "detail": "statsmodels.tsa.stattools",
-        "documentation": {}
-    },
-    {
-        "label": "ADF",
-        "importPath": "arch.unitroot",
-        "description": "arch.unitroot",
-        "isExtraImport": true,
-        "detail": "arch.unitroot",
+        "detail": "tqdm",
         "documentation": {}
     },
     {
@@ -580,6 +382,15 @@
         "description": "math",
         "isExtraImport": true,
         "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
         "documentation": {}
     },
     {
@@ -679,7 +490,7 @@
         "kind": 5,
         "importPath": "data_provider.data_factory",
         "description": "data_provider.data_factory",
-        "peekOfCode": "data_dict = {\n    'ETTh1': Dataset_ETT_hour,\n    'ETTh2': Dataset_ETT_hour,\n    'ETTm1': Dataset_ETT_minute,\n    'ETTm2': Dataset_ETT_minute,\n    'custom': Dataset_Custom,\n    'm4': Dataset_M4,\n    'PSM': PSMSegLoader,\n    'MSL': MSLSegLoader,\n    'SMAP': SMAPSegLoader,",
+        "peekOfCode": "data_dict = {\n    'ETTh1': Dataset_ETT_hour,\n    'ETTh2': Dataset_ETT_hour,\n    'ETTm1': Dataset_ETT_minute,\n    'ETTm2': Dataset_ETT_minute,\n    'custom': Dataset_Custom\n}\ndef data_provider(args, flag):\n    Data = data_dict[args.data]\n    timeenc = 0 if args.embed != 'timeF' else 1",
         "detail": "data_provider.data_factory",
         "documentation": {}
     },
@@ -706,161 +517,8 @@
         "kind": 6,
         "importPath": "data_provider.data_loader",
         "description": "data_provider.data_loader",
-        "peekOfCode": "class Dataset_Custom(Dataset):\n    def __init__(self, args, root_path, flag='train', size=None,\n                 features='S', data_path='ETTh1.csv',\n                 target='OT', scale=True, timeenc=0, freq='h', seasonal_patterns=None):\n        # size [seq_len, label_len, pred_len]\n        self.args = args\n        # info\n        if size == None:\n            self.seq_len = 24 * 4 * 4\n            self.label_len = 24 * 4",
+        "peekOfCode": "class Dataset_Custom(Dataset):\n    def __init__(self,\n                 args,\n                 root_path,\n                 data_path,\n                 size,\n                 features,\n                 flag,\n                 target,\n                 scale=True,",
         "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "Dataset_M4",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class Dataset_M4(Dataset):\n    def __init__(self, args, root_path, flag='pred', size=None,\n                 features='S', data_path='ETTh1.csv',\n                 target='OT', scale=False, inverse=False, timeenc=0, freq='15min',\n                 seasonal_patterns='Yearly'):\n        # size [seq_len, label_len, pred_len]\n        # init\n        self.features = features\n        self.target = target\n        self.scale = scale",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "PSMSegLoader",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class PSMSegLoader(Dataset):\n    def __init__(self, args, root_path, win_size, step=1, flag=\"train\"):\n        self.flag = flag\n        self.step = step\n        self.win_size = win_size\n        self.scaler = StandardScaler()\n        data = pd.read_csv(os.path.join(root_path, 'train.csv'))\n        data = data.values[:, 1:]\n        data = np.nan_to_num(data)\n        self.scaler.fit(data)",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "MSLSegLoader",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class MSLSegLoader(Dataset):\n    def __init__(self, args, root_path, win_size, step=1, flag=\"train\"):\n        self.flag = flag\n        self.step = step\n        self.win_size = win_size\n        self.scaler = StandardScaler()\n        data = np.load(os.path.join(root_path, \"MSL_train.npy\"))\n        self.scaler.fit(data)\n        data = self.scaler.transform(data)\n        test_data = np.load(os.path.join(root_path, \"MSL_test.npy\"))",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "SMAPSegLoader",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class SMAPSegLoader(Dataset):\n    def __init__(self, args, root_path, win_size, step=1, flag=\"train\"):\n        self.flag = flag\n        self.step = step\n        self.win_size = win_size\n        self.scaler = StandardScaler()\n        data = np.load(os.path.join(root_path, \"SMAP_train.npy\"))\n        self.scaler.fit(data)\n        data = self.scaler.transform(data)\n        test_data = np.load(os.path.join(root_path, \"SMAP_test.npy\"))",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "SMDSegLoader",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class SMDSegLoader(Dataset):\n    def __init__(self, args, root_path, win_size, step=100, flag=\"train\"):\n        self.flag = flag\n        self.step = step\n        self.win_size = win_size\n        self.scaler = StandardScaler()\n        data = np.load(os.path.join(root_path, \"SMD_train.npy\"))\n        self.scaler.fit(data)\n        data = self.scaler.transform(data)\n        test_data = np.load(os.path.join(root_path, \"SMD_test.npy\"))",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "SWATSegLoader",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class SWATSegLoader(Dataset):\n    def __init__(self, args, root_path, win_size, step=1, flag=\"train\"):\n        self.flag = flag\n        self.step = step\n        self.win_size = win_size\n        self.scaler = StandardScaler()\n        train_data = pd.read_csv(os.path.join(root_path, 'swat_train2.csv'))\n        test_data = pd.read_csv(os.path.join(root_path, 'swat2.csv'))\n        labels = test_data.values[:, -1:]\n        train_data = train_data.values[:, :-1]",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "UEAloader",
-        "kind": 6,
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "peekOfCode": "class UEAloader(Dataset):\n    \"\"\"\n    Dataset class for datasets included in:\n        Time Series Classification Archive (www.timeseriesclassification.com)\n    Argument:\n        limit_size: float in (0, 1) for debug\n    Attributes:\n        all_df: (num_samples * seq_len, num_columns) dataframe indexed by integer indices, with multiple rows corresponding to the same index (sample).\n            Each row is a time step; Each column contains either metadata (e.g. timestamp) or a feature.\n        feature_df: (num_samples * seq_len, feat_dim) dataframe; contains the subset of columns of `all_df` which correspond to selected features",
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "M4Dataset",
-        "kind": 6,
-        "importPath": "data_provider.m4",
-        "description": "data_provider.m4",
-        "peekOfCode": "class M4Dataset:\n    ids: np.ndarray\n    groups: np.ndarray\n    frequencies: np.ndarray\n    horizons: np.ndarray\n    values: np.ndarray\n    @staticmethod\n    def load(training: bool = True, dataset_file: str = '../dataset/m4') -> 'M4Dataset':\n        \"\"\"\n        Load cached dataset.",
-        "detail": "data_provider.m4",
-        "documentation": {}
-    },
-    {
-        "label": "M4Meta",
-        "kind": 6,
-        "importPath": "data_provider.m4",
-        "description": "data_provider.m4",
-        "peekOfCode": "class M4Meta:\n    seasonal_patterns = ['Yearly', 'Quarterly', 'Monthly', 'Weekly', 'Daily', 'Hourly']\n    horizons = [6, 8, 18, 13, 14, 48]\n    frequencies = [1, 4, 12, 1, 1, 24]\n    horizons_map = {\n        'Yearly': 6,\n        'Quarterly': 8,\n        'Monthly': 18,\n        'Weekly': 13,\n        'Daily': 14,",
-        "detail": "data_provider.m4",
-        "documentation": {}
-    },
-    {
-        "label": "url_file_name",
-        "kind": 2,
-        "importPath": "data_provider.m4",
-        "description": "data_provider.m4",
-        "peekOfCode": "def url_file_name(url: str) -> str:\n    \"\"\"\n    Extract file name from url.\n    :param url: URL to extract file name from.\n    :return: File name.\n    \"\"\"\n    return url.split('/')[-1] if len(url) > 0 else ''\ndef download(url: str, file_path: str) -> None:\n    \"\"\"\n    Download a file to the given path.",
-        "detail": "data_provider.m4",
-        "documentation": {}
-    },
-    {
-        "label": "download",
-        "kind": 2,
-        "importPath": "data_provider.m4",
-        "description": "data_provider.m4",
-        "peekOfCode": "def download(url: str, file_path: str) -> None:\n    \"\"\"\n    Download a file to the given path.\n    :param url: URL to download\n    :param file_path: Where to download the content.\n    \"\"\"\n    def progress(count, block_size, total_size):\n        progress_pct = float(count * block_size) / float(total_size) * 100.0\n        sys.stdout.write('\\rDownloading {} to {} {:.1f}%'.format(url, file_path, progress_pct))\n        sys.stdout.flush()",
-        "detail": "data_provider.m4",
-        "documentation": {}
-    },
-    {
-        "label": "load_m4_info",
-        "kind": 2,
-        "importPath": "data_provider.m4",
-        "description": "data_provider.m4",
-        "peekOfCode": "def load_m4_info() -> pd.DataFrame:\n    \"\"\"\n    Load M4Info file.\n    :return: Pandas DataFrame of M4Info.\n    \"\"\"\n    return pd.read_csv(INFO_FILE_PATH)",
-        "detail": "data_provider.m4",
-        "documentation": {}
-    },
-    {
-        "label": "Normalizer",
-        "kind": 6,
-        "importPath": "data_provider.uea",
-        "description": "data_provider.uea",
-        "peekOfCode": "class Normalizer(object):\n    \"\"\"\n    Normalizes dataframe across ALL contained rows (time steps). Different from per-sample normalization.\n    \"\"\"\n    def __init__(self, norm_type='standardization', mean=None, std=None, min_val=None, max_val=None):\n        \"\"\"\n        Args:\n            norm_type: choose from:\n                \"standardization\", \"minmax\": normalizes dataframe across ALL contained rows (time steps)\n                \"per_sample_std\", \"per_sample_minmax\": normalizes each sample separately (i.e. across only its own rows)",
-        "detail": "data_provider.uea",
-        "documentation": {}
-    },
-    {
-        "label": "collate_fn",
-        "kind": 2,
-        "importPath": "data_provider.uea",
-        "description": "data_provider.uea",
-        "peekOfCode": "def collate_fn(data, max_len=None):\n    \"\"\"Build mini-batch tensors from a list of (X, mask) tuples. Mask input. Create\n    Args:\n        data: len(batch_size) list of tuples (X, y).\n            - X: torch tensor of shape (seq_length, feat_dim); variable seq_length.\n            - y: torch tensor of shape (num_labels,) : class indices or numerical targets\n                (for classification or regression, respectively). num_labels > 1 for multi-task models\n        max_len: global fixed sequence length. Used for architectures requiring fixed length input,\n            where the batch length cannot vary dynamically. Longer sequences are clipped, shorter are padded with 0s\n    Returns:",
-        "detail": "data_provider.uea",
-        "documentation": {}
-    },
-    {
-        "label": "padding_mask",
-        "kind": 2,
-        "importPath": "data_provider.uea",
-        "description": "data_provider.uea",
-        "peekOfCode": "def padding_mask(lengths, max_len=None):\n    \"\"\"\n    Used to mask padded positions: creates a (batch_size, max_len) boolean mask from a tensor of sequence lengths,\n    where 1 means keep element at this position (time step)\n    \"\"\"\n    batch_size = lengths.numel()\n    max_len = max_len or lengths.max_val()  # trick works because of overloading of 'or' operator for non-boolean types\n    return (torch.arange(0, max_len, device=lengths.device)\n            .type_as(lengths)\n            .repeat(batch_size, 1)",
-        "detail": "data_provider.uea",
-        "documentation": {}
-    },
-    {
-        "label": "interpolate_missing",
-        "kind": 2,
-        "importPath": "data_provider.uea",
-        "description": "data_provider.uea",
-        "peekOfCode": "def interpolate_missing(y):\n    \"\"\"\n    Replaces NaN values in pd.Series `y` using linear interpolation\n    \"\"\"\n    if y.isna().any():\n        y = y.interpolate(method='linear', limit_direction='both')\n    return y\ndef subsample(y, limit=256, factor=2):\n    \"\"\"\n    If a given Series is longer than `limit`, returns subsampled sequence by the specified integer factor",
-        "detail": "data_provider.uea",
-        "documentation": {}
-    },
-    {
-        "label": "subsample",
-        "kind": 2,
-        "importPath": "data_provider.uea",
-        "description": "data_provider.uea",
-        "peekOfCode": "def subsample(y, limit=256, factor=2):\n    \"\"\"\n    If a given Series is longer than `limit`, returns subsampled sequence by the specified integer factor\n    \"\"\"\n    if len(y) > limit:\n        return y[::factor].reset_index(drop=True)\n    return y",
-        "detail": "data_provider.uea",
         "documentation": {}
     },
     {
