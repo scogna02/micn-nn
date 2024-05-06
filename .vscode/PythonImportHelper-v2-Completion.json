@@ -1,5 +1,13 @@
 [
     {
+        "label": "Dataset_Weather",
+        "importPath": "data_provider.data_loader",
+        "description": "data_provider.data_loader",
+        "isExtraImport": true,
+        "detail": "data_provider.data_loader",
+        "documentation": {}
+    },
+    {
         "label": "Dataset_ETT_hour",
         "importPath": "data_provider.data_loader",
         "description": "data_provider.data_loader",
@@ -9,14 +17,6 @@
     },
     {
         "label": "Dataset_ETT_minute",
-        "importPath": "data_provider.data_loader",
-        "description": "data_provider.data_loader",
-        "isExtraImport": true,
-        "detail": "data_provider.data_loader",
-        "documentation": {}
-    },
-    {
-        "label": "Dataset_Custom",
         "importPath": "data_provider.data_loader",
         "description": "data_provider.data_loader",
         "isExtraImport": true,
@@ -490,7 +490,7 @@
         "kind": 5,
         "importPath": "data_provider.data_factory",
         "description": "data_provider.data_factory",
-        "peekOfCode": "data_dict = {\n    'ETTh1': Dataset_ETT_hour,\n    'ETTh2': Dataset_ETT_hour,\n    'ETTm1': Dataset_ETT_minute,\n    'ETTm2': Dataset_ETT_minute,\n    'custom': Dataset_Custom\n}\ndef data_provider(args, flag):\n    Data = data_dict[args.data]\n    timeenc = 0 if args.embed != 'timeF' else 1",
+        "peekOfCode": "data_dict = {\n    'ETTh1': Dataset_ETT_hour,\n    'ETTh2': Dataset_ETT_hour,\n    'ETTm1': Dataset_ETT_minute,\n    'ETTm2': Dataset_ETT_minute,\n    'custom': Dataset_Weather\n}\ndef data_provider(args, flag):\n    Data = data_dict[args.data]\n    timeenc = 0 if args.embed != 'timeF' else 1",
         "detail": "data_provider.data_factory",
         "documentation": {}
     },
@@ -513,11 +513,11 @@
         "documentation": {}
     },
     {
-        "label": "Dataset_Custom",
+        "label": "Dataset_Weather",
         "kind": 6,
         "importPath": "data_provider.data_loader",
         "description": "data_provider.data_loader",
-        "peekOfCode": "class Dataset_Custom(Dataset):\n    def __init__(self,\n                 args,\n                 root_path,\n                 data_path,\n                 size,\n                 features,\n                 flag,\n                 target,\n                 scale=True,",
+        "peekOfCode": "class Dataset_Weather(Dataset):\n    def __init__(self,\n                 args,\n                 root_path,\n                 data_path,\n                 size,\n                 features,\n                 flag,\n                 target,\n                 scale=True,",
         "detail": "data_provider.data_loader",
         "documentation": {}
     },

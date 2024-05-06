@@ -200,7 +200,7 @@ class Dataset_ETT_minute(Dataset):
 
     def inverse_transform(self, data):
         return self.scaler.inverse_transform(data)
-class Dataset_Custom(Dataset):
+class Dataset_Weather(Dataset):
     def __init__(self,
                  args,
                  root_path,
