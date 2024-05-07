@@ -264,6 +264,7 @@ class Exp_Imputation(Exp_Basic):
         np.save(folder_path + 'true.npy', trues)
         return
 
+
 class Exp_Long_Term_Forecast(Exp_Basic):
     def __init__(self, args):
         super(Exp_Long_Term_Forecast, self).__init__(args)

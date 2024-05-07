@@ -83,27 +83,147 @@
         "documentation": {}
     },
     {
-        "label": "run_augmentation_single",
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
+        "label": "data_provider",
+        "importPath": "data_provider.data_factory",
+        "description": "data_provider.data_factory",
         "isExtraImport": true,
-        "detail": "utils.augmentation",
+        "detail": "data_provider.data_factory",
         "documentation": {}
     },
     {
-        "label": "run_augmentation",
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
+        "label": "data_provider",
+        "importPath": "data_provider.data_factory",
+        "description": "data_provider.data_factory",
         "isExtraImport": true,
-        "detail": "utils.augmentation",
+        "detail": "data_provider.data_factory",
         "documentation": {}
     },
     {
-        "label": "run_augmentation_single",
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
+        "label": "data_provider",
+        "importPath": "data_provider.data_factory",
+        "description": "data_provider.data_factory",
         "isExtraImport": true,
-        "detail": "utils.augmentation",
+        "detail": "data_provider.data_factory",
+        "documentation": {}
+    },
+    {
+        "label": "Exp_Basic",
+        "importPath": "exp.exp_basic",
+        "description": "exp.exp_basic",
+        "isExtraImport": true,
+        "detail": "exp.exp_basic",
+        "documentation": {}
+    },
+    {
+        "label": "Exp_Basic",
+        "importPath": "exp.exp_basic",
+        "description": "exp.exp_basic",
+        "isExtraImport": true,
+        "detail": "exp.exp_basic",
+        "documentation": {}
+    },
+    {
+        "label": "Exp_Basic",
+        "importPath": "exp.exp_basic",
+        "description": "exp.exp_basic",
+        "isExtraImport": true,
+        "detail": "exp.exp_basic",
+        "documentation": {}
+    },
+    {
+        "label": "EarlyStopping",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "adjust_learning_rate",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "visual",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "EarlyStopping",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "adjust_learning_rate",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "visual",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "EarlyStopping",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "adjust_learning_rate",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "visual",
+        "importPath": "utils.tools",
+        "description": "utils.tools",
+        "isExtraImport": true,
+        "detail": "utils.tools",
+        "documentation": {}
+    },
+    {
+        "label": "metric",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "metric",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "metric",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
         "documentation": {}
     },
     {
@@ -132,107 +252,11 @@
         "documentation": {}
     },
     {
-        "label": "MICN",
-        "importPath": "models",
-        "description": "models",
+        "label": "optim",
+        "importPath": "torch",
+        "description": "torch",
         "isExtraImport": true,
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "data_provider",
-        "importPath": "data_provider.data_factory",
-        "description": "data_provider.data_factory",
-        "isExtraImport": true,
-        "detail": "data_provider.data_factory",
-        "documentation": {}
-    },
-    {
-        "label": "data_provider",
-        "importPath": "data_provider.data_factory",
-        "description": "data_provider.data_factory",
-        "isExtraImport": true,
-        "detail": "data_provider.data_factory",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Basic",
-        "importPath": "exp.exp_basic",
-        "description": "exp.exp_basic",
-        "isExtraImport": true,
-        "detail": "exp.exp_basic",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Basic",
-        "importPath": "exp.exp_basic",
-        "description": "exp.exp_basic",
-        "isExtraImport": true,
-        "detail": "exp.exp_basic",
-        "documentation": {}
-    },
-    {
-        "label": "EarlyStopping",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "adjust_learning_rate",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "visual",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "EarlyStopping",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "adjust_learning_rate",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "visual",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "metric",
-        "importPath": "utils.metrics",
-        "description": "utils.metrics",
-        "isExtraImport": true,
-        "detail": "utils.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "metric",
-        "importPath": "utils.metrics",
-        "description": "utils.metrics",
-        "isExtraImport": true,
-        "detail": "utils.metrics",
+        "detail": "torch",
         "documentation": {}
     },
     {
@@ -311,19 +335,27 @@
         "documentation": {}
     },
     {
-        "label": "dtw",
-        "importPath": "utils.dtw_metric",
-        "description": "utils.dtw_metric",
+        "label": "MICN",
+        "importPath": "models",
+        "description": "models",
         "isExtraImport": true,
-        "detail": "utils.dtw_metric",
+        "detail": "models",
         "documentation": {}
     },
     {
-        "label": "accelerated_dtw",
-        "importPath": "utils.dtw_metric",
-        "description": "utils.dtw_metric",
+        "label": "MICN",
+        "importPath": "models",
+        "description": "models",
         "isExtraImport": true,
-        "detail": "utils.dtw_metric",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "MICN",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
         "documentation": {}
     },
     {
@@ -445,18 +477,18 @@
     },
     {
         "label": "Exp_Long_Term_Forecast",
-        "importPath": "exp.exp_long_term_forecasting",
-        "description": "exp.exp_long_term_forecasting",
+        "importPath": "exp.exp",
+        "description": "exp.exp",
         "isExtraImport": true,
-        "detail": "exp.exp_long_term_forecasting",
+        "detail": "exp.exp",
         "documentation": {}
     },
     {
         "label": "Exp_Imputation",
-        "importPath": "exp.exp_imputation",
-        "description": "exp.exp_imputation",
+        "importPath": "exp.exp",
+        "description": "exp.exp",
         "isExtraImport": true,
-        "detail": "exp.exp_imputation",
+        "detail": "exp.exp",
         "documentation": {}
     },
     {
@@ -524,6 +556,33 @@
     {
         "label": "Exp_Basic",
         "kind": 6,
+        "importPath": "exp.exp",
+        "description": "exp.exp",
+        "peekOfCode": "class Exp_Basic(object):\n    def __init__(self, args):\n        self.args = args\n        self.model_dict = {'MICN': MICN,}\n        self.device = self._acquire_device()\n        self.model = self._build_model().to(self.device)\n    def _build_model(self):\n        raise NotImplementedError\n        return None\n    def _acquire_device(self):",
+        "detail": "exp.exp",
+        "documentation": {}
+    },
+    {
+        "label": "Exp_Imputation",
+        "kind": 6,
+        "importPath": "exp.exp",
+        "description": "exp.exp",
+        "peekOfCode": "class Exp_Imputation(Exp_Basic):\n    def __init__(self, args):\n        super(Exp_Imputation, self).__init__(args)\n    def _build_model(self):\n        model = self.model_dict[self.args.model].Model(self.args).float()\n        if self.args.use_multi_gpu and self.args.use_gpu:\n            model = nn.DataParallel(model, device_ids=self.args.device_ids)\n        return model\n    def _get_data(self, flag):\n        data_set, data_loader = data_provider(self.args, flag)",
+        "detail": "exp.exp",
+        "documentation": {}
+    },
+    {
+        "label": "Exp_Long_Term_Forecast",
+        "kind": 6,
+        "importPath": "exp.exp",
+        "description": "exp.exp",
+        "peekOfCode": "class Exp_Long_Term_Forecast(Exp_Basic):\n    def __init__(self, args):\n        super(Exp_Long_Term_Forecast, self).__init__(args)\n    def _build_model(self):\n        model = self.model_dict[self.args.model].Model(self.args).float()\n        if self.args.use_multi_gpu and self.args.use_gpu:\n            model = nn.DataParallel(model, device_ids=self.args.device_ids)\n        return model\n    def _get_data(self, flag):\n        data_set, data_loader = data_provider(self.args, flag)",
+        "detail": "exp.exp",
+        "documentation": {}
+    },
+    {
+        "label": "Exp_Basic",
+        "kind": 6,
         "importPath": "exp.exp_basic",
         "description": "exp.exp_basic",
         "peekOfCode": "class Exp_Basic(object):\n    def __init__(self, args):\n        self.args = args\n        self.model_dict = {'MICN': MICN,}\n        self.device = self._acquire_device()\n        self.model = self._build_model().to(self.device)\n    def _build_model(self):\n        raise NotImplementedError\n        return None\n    def _acquire_device(self):",
@@ -537,6 +596,24 @@
         "description": "exp.exp_imputation",
         "peekOfCode": "class Exp_Imputation(Exp_Basic):\n    def __init__(self, args):\n        super(Exp_Imputation, self).__init__(args)\n    def _build_model(self):\n        model = self.model_dict[self.args.model].Model(self.args).float()\n        if self.args.use_multi_gpu and self.args.use_gpu:\n            model = nn.DataParallel(model, device_ids=self.args.device_ids)\n        return model\n    def _get_data(self, flag):\n        data_set, data_loader = data_provider(self.args, flag)",
         "detail": "exp.exp_imputation",
+        "documentation": {}
+    },
+    {
+        "label": "Exp_Basic",
+        "kind": 6,
+        "importPath": "exp.exp_long_term_forecasting",
+        "description": "exp.exp_long_term_forecasting",
+        "peekOfCode": "class Exp_Basic(object):\n    def __init__(self, args):\n        self.args = args\n        self.model_dict = {'MICN': MICN,}\n        self.device = self._acquire_device()\n        self.model = self._build_model().to(self.device)\n    def _build_model(self):\n        raise NotImplementedError\n        return None\n    def _acquire_device(self):",
+        "detail": "exp.exp_long_term_forecasting",
+        "documentation": {}
+    },
+    {
+        "label": "Exp_Imputation",
+        "kind": 6,
+        "importPath": "exp.exp_long_term_forecasting",
+        "description": "exp.exp_long_term_forecasting",
+        "peekOfCode": "class Exp_Imputation(Exp_Basic):\n    def __init__(self, args):\n        super(Exp_Imputation, self).__init__(args)\n    def _build_model(self):\n        model = self.model_dict[self.args.model].Model(self.args).float()\n        if self.args.use_multi_gpu and self.args.use_gpu:\n            model = nn.DataParallel(model, device_ids=self.args.device_ids)\n        return model\n    def _get_data(self, flag):\n        data_set, data_loader = data_provider(self.args, flag)",
+        "detail": "exp.exp_long_term_forecasting",
         "documentation": {}
     },
     {

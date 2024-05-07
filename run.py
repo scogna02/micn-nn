@@ -1,8 +1,10 @@
 import argparse
 import os
 import torch
-from exp.exp_long_term_forecasting import Exp_Long_Term_Forecast
-from exp.exp_imputation import Exp_Imputation
+#from exp.exp_long_term_forecasting import Exp_Long_Term_Forecast
+#from exp.exp_imputation import Exp_Imputation
+from exp.exp import Exp_Long_Term_Forecast 
+from exp.exp import Exp_Imputation
 from utils.print_args import print_args
 import random
 import numpy as np
@@ -45,7 +47,7 @@ if __name__ == '__main__':
     parser.add_argument('--mask_rate', type=float, default=0.25, help='mask ratio')
 
     # anomaly detection task
-    parser.add_argument('--anomaly_ratio', type=float, default=0.25, help='prior anomaly ratio (%)')
+    # parser.add_argument('--anomaly_ratio', type=float, default=0.25, help='prior anomaly ratio (%)')
 
     # model define
     #parser.add_argument('--expand', type=int, default=2, help='expansion factor for Mamba') # useless
@@ -83,10 +85,10 @@ if __name__ == '__main__':
     #                    help='the length of segmen-wise iteration of SegRNN')
 
     # optimization
-    parser.add_argument('--num_workers', type=int, default=100  , help='data loader num workers')
+    parser.add_argument('--num_workers', type=int, default=10  , help='data loader num workers')
     parser.add_argument('--itr', type=int, default=1, help='experiments times')
     parser.add_argument('--train_epochs', type=int, default=10, help='train epochs')
-    parser.add_argument('--batch_size', type=int, default=32, help='batch size of train input data')
+    parser.add_argument('--batch_size', type=int, default=1, help='batch size of train input data')
     parser.add_argument('--patience', type=int, default=3, help='early stopping patience')
     parser.add_argument('--learning_rate', type=float, default=0.0001, help='optimizer learning rate')
     parser.add_argument('--des', type=str, default='test', help='exp description')
@@ -100,11 +102,13 @@ if __name__ == '__main__':
     parser.add_argument('--use_multi_gpu', action='store_true', help='use multiple gpus', default=False)
     parser.add_argument('--devices', type=str, default='0,1,2,3', help='device ids of multile gpus')
 
+    
     # de-stationary projector params
     parser.add_argument('--p_hidden_dims', type=int, nargs='+', default=[128, 128],
                         help='hidden layer dimensions of projector (List)')
     parser.add_argument('--p_hidden_layers', type=int, default=2, help='number of hidden layers in projector')
 
+    """
     # metrics (dtw)
     parser.add_argument('--use_dtw', type=bool, default=False, 
                         help='the controller of using dtw metric (dtw is time consuming, not suggested unless necessary)')
@@ -127,7 +131,7 @@ if __name__ == '__main__':
     parser.add_argument('--wdba', default=False, action="store_true", help="Weighted DBA preset augmentation")
     parser.add_argument('--discdtw', default=False, action="store_true", help="Discrimitive DTW warp preset augmentation")
     parser.add_argument('--discsdtw', default=False, action="store_true", help="Discrimitive shapeDTW warp preset augmentation")
-    parser.add_argument('--extra_tag', type=str, default="", help="Anything extra")
+    parser.add_argument('--extra_tag', type=str, default="", help="Anything extra")"""
 
     args = parser.parse_args()
     # args.use_gpu = True if torch.cuda.is_available() and args.use_gpu else False

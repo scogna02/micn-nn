@@ -11,7 +11,7 @@ from utils.timefeatures import time_features
 #from data_provider.uea import subsample, interpolate_missing, Normalizer
 #from sktime.datasets import load_from_tsfile_to_dataframe
 import warnings
-from utils.augmentation import run_augmentation_single
+#from utils.augmentation import run_augmentation_single
 
 warnings.filterwarnings('ignore')
 
@@ -84,8 +84,8 @@ class Dataset_ETT_hour(Dataset):
         self.data_x = data[border1:border2]
         self.data_y = data[border1:border2]
 
-        if self.set_type == 0 and self.args.augmentation_ratio > 0:
-            self.data_x, self.data_y, augmentation_tags = run_augmentation_single(self.data_x, self.data_y, self.args)
+        #if self.set_type == 0 and self.args.augmentation_ratio > 0:
+        #    self.data_x, self.data_y, augmentation_tags = run_augmentation_single(self.data_x, self.data_y, self.args)
             
         self.data_stamp = data_stamp
 
@@ -177,8 +177,8 @@ class Dataset_ETT_minute(Dataset):
         self.data_x = data[border1:border2]
         self.data_y = data[border1:border2]
 
-        if self.set_type == 0 and self.args.augmentation_ratio > 0:
-            self.data_x, self.data_y, augmentation_tags = run_augmentation_single(self.data_x, self.data_y, self.args)
+        #if self.set_type == 0 and self.args.augmentation_ratio > 0:
+        #    self.data_x, self.data_y, augmentation_tags = run_augmentation_single(self.data_x, self.data_y, self.args)
 
         self.data_stamp = data_stamp
 
@@ -287,8 +287,8 @@ class Dataset_Weather(Dataset):
         self.data_x = data[border1:border2]
         self.data_y = data[border1:border2]
 
-        if self.set_type == 0 and self.args.augmentation_ratio > 0:
-            self.data_x, self.data_y, augmentation_tags = run_augmentation_single(self.data_x, self.data_y, self.args)
+        #if self.set_type == 0 and self.args.augmentation_ratio > 0:
+        #    self.data_x, self.data_y, augmentation_tags = run_augmentation_single(self.data_x, self.data_y, self.args)
 
         self.data_stamp = data_stamp
 

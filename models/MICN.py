@@ -159,7 +159,6 @@ class Model(nn.Module):
                                              isometric_kernel=isometric_kernels,
                                              device=torch.device('cuda:0'))
         if self.task_name == 'long_term_forecast':
-
             self.regression = nn.Linear(configs.seq_len, configs.pred_len)
             self.regression.weight = nn.Parameter(
                 (1 / configs.pred_len) * torch.ones([configs.pred_len, configs.seq_len]),
