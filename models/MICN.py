@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from layers import DataEmbedding, series_decomp, series_decomp_multi
+from utils.layers import DataEmbedding, series_decomp, series_decomp_multi
 import torch.nn.functional as F
 
 class MIC(nn.Module):
