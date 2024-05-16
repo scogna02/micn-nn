@@ -93,8 +93,6 @@ class MIC(nn.Module):
         processed_output = self.conv2(processed_output).transpose(-1, 1) 
         return self.norm2(merged_output + processed_output) 
 
-
-
 class SeasonalPrediction(nn.Module):
     def __init__(self, embedding_size=512, n_heads=8, dropout=0.05, d_layers=1, decomp_kernel=[32], c_out=1,
                  conv_kernel=[2, 4], isometric_kernel=[18, 6], device='cuda'):
@@ -111,7 +109,6 @@ class SeasonalPrediction(nn.Module):
         for mic_layer in self.mic:
             dec = mic_layer(dec)
         return self.projection(dec)
-
 
 class Model(nn.Module):
     """
