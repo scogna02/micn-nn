@@ -1,5 +1,5 @@
 from data_provider.data_factory import data_provider
-from exp.exp_basic import Exp_Basic
+#from exp.exp_basic import Exp_Basic
 from utils.tools import EarlyStopping, adjust_learning_rate, visual
 from utils.metrics import metric
 import torch
@@ -12,6 +12,7 @@ import numpy as np
 #from utils.dtw_metric import dtw,accelerated_dtw
 #from utils.augmentation import run_augmentation,run_augmentation_single
 from models import MICN
+from torch.utils.tensorboard import SummaryWriter
 
 warnings.filterwarnings('ignore')
 
@@ -21,6 +22,7 @@ class Exp_Basic(object):
         self.model_dict = {'MICN': MICN,}
         self.device = self._acquire_device()
         self.model = self._build_model().to(self.device)
+        self.writer = SummaryWriter()
 
     def _build_model(self):
         raise NotImplementedError
@@ -137,6 +139,10 @@ class Exp_Imputation(Exp_Basic):
             vali_loss = self.vali(vali_data, vali_loader, criterion)
             test_loss = self.vali(test_data, test_loader, criterion)
 
+            self.writer.add_scalar('Loss/train_epoch', train_loss, epoch)
+            self.writer.add_scalar('Loss/vali_epoch', vali_loss, epoch)
+            self.writer.add_scalar('Loss/test_epoch', test_loss, epoch)
+
             print("Epoch: {0}, Steps: {1} | Train Loss: {2:.7f} Vali Loss: {3:.7f} Test Loss: {4:.7f}".format(
                 epoch + 1, train_steps, train_loss, vali_loss, test_loss))
             early_stopping(vali_loss, self.model, path)
@@ -145,6 +151,7 @@ class Exp_Imputation(Exp_Basic):
                 break
             adjust_learning_rate(model_optim, epoch + 1, self.args)
 
+        self.writer.close()
         best_model_path = path + '/' + 'checkpoint.pth'
         self.model.load_state_dict(torch.load(best_model_path))
 
@@ -305,14 +312,8 @@ class Exp_Long_Term_Forecast(Exp_Basic):
                 # encoder - decoder
                 if self.args.use_amp:
                     with torch.cuda.amp.autocast():
-                        #if self.args.output_attention:
-                        #    outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)[0]
-                        #else:
                         outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)
                 else:
-                    #if self.args.output_attention:
-                    #    outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)[0]
-                    #else:
                     outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)
                 f_dim = -1 if self.args.features == 'MS' else 0
                 outputs = outputs[:, -self.args.pred_len:, f_dim:]
@@ -369,9 +370,6 @@ class Exp_Long_Term_Forecast(Exp_Basic):
                 # encoder - decoder
                 if self.args.use_amp:
                     with torch.cuda.amp.autocast():
-                        #if self.args.output_attention:
-                        #    outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)[0]
-                        #else:
                         outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)
 
                         f_dim = -1 if self.args.features == 'MS' else 0
@@ -380,9 +378,6 @@ class Exp_Long_Term_Forecast(Exp_Basic):
                         loss = criterion(outputs, batch_y)
                         train_loss.append(loss.item())
                 else:
-                    #if self.args.output_attention:
-                    #    outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)[0]
-                    #else:
                     outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)
 
                     f_dim = -1 if self.args.features == 'MS' else 0
@@ -412,6 +407,10 @@ class Exp_Long_Term_Forecast(Exp_Basic):
             vali_loss = self.vali(vali_data, vali_loader, criterion)
             test_loss = self.vali(test_data, test_loader, criterion)
 
+            self.writer.add_scalar('Loss/train_epoch', train_loss, epoch)
+            self.writer.add_scalar('Loss/vali_epoch', vali_loss, epoch)
+            self.writer.add_scalar('Loss/test_epoch', test_loss, epoch)
+
             print("Epoch: {0}, Steps: {1} | Train Loss: {2:.7f} Vali Loss: {3:.7f} Test Loss: {4:.7f}".format(
                 epoch + 1, train_steps, train_loss, vali_loss, test_loss))
             early_stopping(vali_loss, self.model, path)
@@ -421,6 +420,7 @@ class Exp_Long_Term_Forecast(Exp_Basic):
 
             adjust_learning_rate(model_optim, epoch + 1, self.args)
 
+        self.writer.close()
         best_model_path = path + '/' + 'checkpoint.pth'
         self.model.load_state_dict(torch.load(best_model_path))
 
@@ -502,23 +502,6 @@ class Exp_Long_Term_Forecast(Exp_Basic):
         folder_path = './results/' + setting + '/'
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
-
-        """
-        # dtw calculation
-        if self.args.use_dtw:
-            dtw_list = []
-            manhattan_distance = lambda x, y: np.abs(x - y)
-            for i in range(preds.shape[0]):
-                x = preds[i].reshape(-1,1)
-                y = trues[i].reshape(-1,1)
-                if i % 100 == 0:
-                    print("calculating dtw iter:", i)
-                d, _, _, _ = accelerated_dtw(x, y, dist=manhattan_distance)
-                dtw_list.append(d)
-            dtw = np.array(dtw_list).mean()
-        else:
-            dtw = -999"""
-            
 
         mae, mse, rmse, mape, mspe = metric(preds, trues)
         print('mse:{}, mae:{}, dtw:{}'.format(mse, mae))
