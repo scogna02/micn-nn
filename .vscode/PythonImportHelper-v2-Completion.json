@@ -91,30 +91,6 @@
         "documentation": {}
     },
     {
-        "label": "data_provider",
-        "importPath": "data_provider.data_factory",
-        "description": "data_provider.data_factory",
-        "isExtraImport": true,
-        "detail": "data_provider.data_factory",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Basic",
-        "importPath": "exp.exp_basic",
-        "description": "exp.exp_basic",
-        "isExtraImport": true,
-        "detail": "exp.exp_basic",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Basic",
-        "importPath": "exp.exp_basic",
-        "description": "exp.exp_basic",
-        "isExtraImport": true,
-        "detail": "exp.exp_basic",
-        "documentation": {}
-    },
-    {
         "label": "EarlyStopping",
         "importPath": "utils.tools",
         "description": "utils.tools",
@@ -136,38 +112,6 @@
         "description": "utils.tools",
         "isExtraImport": true,
         "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "EarlyStopping",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "adjust_learning_rate",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "visual",
-        "importPath": "utils.tools",
-        "description": "utils.tools",
-        "isExtraImport": true,
-        "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "metric",
-        "importPath": "utils.metrics",
-        "description": "utils.metrics",
-        "isExtraImport": true,
-        "detail": "utils.metrics",
         "documentation": {}
     },
     {
@@ -184,14 +128,6 @@
         "isExtraImport": true,
         "importPath": "torch",
         "description": "torch",
-        "detail": "torch",
-        "documentation": {}
-    },
-    {
-        "label": "optim",
-        "importPath": "torch",
-        "description": "torch",
-        "isExtraImport": true,
         "detail": "torch",
         "documentation": {}
     },
@@ -231,54 +167,6 @@
         "documentation": {}
     },
     {
-        "label": "array",
-        "importPath": "numpy",
-        "description": "numpy",
-        "isExtraImport": true,
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "zeros",
-        "importPath": "numpy",
-        "description": "numpy",
-        "isExtraImport": true,
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "full",
-        "importPath": "numpy",
-        "description": "numpy",
-        "isExtraImport": true,
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "argmin",
-        "importPath": "numpy",
-        "description": "numpy",
-        "isExtraImport": true,
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "inf",
-        "importPath": "numpy",
-        "description": "numpy",
-        "isExtraImport": true,
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "ndim",
-        "importPath": "numpy",
-        "description": "numpy",
-        "isExtraImport": true,
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
         "label": "MICN",
         "importPath": "models",
         "description": "models",
@@ -287,35 +175,35 @@
         "documentation": {}
     },
     {
-        "label": "MICN",
-        "importPath": "models",
-        "description": "models",
+        "label": "SummaryWriter",
+        "importPath": "torch.utils.tensorboard",
+        "description": "torch.utils.tensorboard",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "torch.utils.tensorboard",
         "documentation": {}
     },
     {
         "label": "DataEmbedding",
-        "importPath": "layers",
-        "description": "layers",
+        "importPath": "utils.layers",
+        "description": "utils.layers",
         "isExtraImport": true,
-        "detail": "layers",
+        "detail": "utils.layers",
         "documentation": {}
     },
     {
         "label": "series_decomp",
-        "importPath": "layers",
-        "description": "layers",
+        "importPath": "utils.layers",
+        "description": "utils.layers",
         "isExtraImport": true,
-        "detail": "layers",
+        "detail": "utils.layers",
         "documentation": {}
     },
     {
         "label": "series_decomp_multi",
-        "importPath": "layers",
-        "description": "layers",
+        "importPath": "utils.layers",
+        "description": "utils.layers",
         "isExtraImport": true,
-        "detail": "layers",
+        "detail": "utils.layers",
         "documentation": {}
     },
     {
@@ -328,45 +216,12 @@
         "documentation": {}
     },
     {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "math",
         "description": "math",
         "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "isinf",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "cdist",
-        "importPath": "scipy.spatial.distance",
-        "description": "scipy.spatial.distance",
-        "isExtraImport": true,
-        "detail": "scipy.spatial.distance",
         "documentation": {}
     },
     {
@@ -494,7 +349,7 @@
         "kind": 6,
         "importPath": "exp.exp",
         "description": "exp.exp",
-        "peekOfCode": "class Exp_Basic(object):\n    def __init__(self, args):\n        self.args = args\n        self.model_dict = {'MICN': MICN,}\n        self.device = self._acquire_device()\n        self.model = self._build_model().to(self.device)\n    def _build_model(self):\n        raise NotImplementedError\n        return None\n    def _acquire_device(self):",
+        "peekOfCode": "class Exp_Basic(object):\n    def __init__(self, args):\n        self.args = args\n        self.model_dict = {'MICN': MICN,}\n        self.device = self._acquire_device()\n        self.model = self._build_model().to(self.device)\n        self.writer = SummaryWriter()\n    def _build_model(self):\n        raise NotImplementedError\n        return None",
         "detail": "exp.exp",
         "documentation": {}
     },
@@ -514,24 +369,6 @@
         "description": "exp.exp",
         "peekOfCode": "class Exp_Long_Term_Forecast(Exp_Basic):\n    def __init__(self, args):\n        super(Exp_Long_Term_Forecast, self).__init__(args)\n    def _build_model(self):\n        model = self.model_dict[self.args.model].Model(self.args).float()\n        if self.args.use_multi_gpu and self.args.use_gpu:\n            model = nn.DataParallel(model, device_ids=self.args.device_ids)\n        return model\n    def _get_data(self, flag):\n        data_set, data_loader = data_provider(self.args, flag)",
         "detail": "exp.exp",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Basic",
-        "kind": 6,
-        "importPath": "exp.exp_basic",
-        "description": "exp.exp_basic",
-        "peekOfCode": "class Exp_Basic(object):\n    def __init__(self, args):\n        self.args = args\n        self.model_dict = {'MICN': MICN,}\n        self.device = self._acquire_device()\n        self.model = self._build_model().to(self.device)\n    def _build_model(self):\n        raise NotImplementedError\n        return None\n    def _acquire_device(self):",
-        "detail": "exp.exp_basic",
-        "documentation": {}
-    },
-    {
-        "label": "Exp_Imputation",
-        "kind": 6,
-        "importPath": "exp.exp_imputation",
-        "description": "exp.exp_imputation",
-        "peekOfCode": "class Exp_Imputation(Exp_Basic):\n    def __init__(self, args):\n        super(Exp_Imputation, self).__init__(args)\n    def _build_model(self):\n        model = self.model_dict[self.args.model].Model(self.args).float()\n        if self.args.use_multi_gpu and self.args.use_gpu:\n            model = nn.DataParallel(model, device_ids=self.args.device_ids)\n        return model\n    def _get_data(self, flag):\n        data_set, data_loader = data_provider(self.args, flag)",
-        "detail": "exp.exp_imputation",
         "documentation": {}
     },
     {
@@ -562,273 +399,84 @@
         "documentation": {}
     },
     {
-        "label": "calculate_ADF",
-        "kind": 2,
-        "importPath": "utils.ADFtest",
-        "description": "utils.ADFtest",
-        "peekOfCode": "def calculate_ADF(root_path,data_path):\n    df_raw = pd.read_csv(os.path.join(root_path,data_path))\n    cols = list(df_raw.columns)\n    cols.remove('date')\n    df_raw = df_raw[cols]\n    adf_list = []\n    for i in cols:\n        df_data = df_raw[i]\n        adf = adfuller(df_data, maxlag = 1)\n        print(adf)",
-        "detail": "utils.ADFtest",
+        "label": "PositionalEmbedding",
+        "kind": 6,
+        "importPath": "utils.layers",
+        "description": "utils.layers",
+        "peekOfCode": "class PositionalEmbedding(nn.Module):\n    def __init__(self, d_model, max_len=5000):\n        super(PositionalEmbedding, self).__init__()\n        # Compute the positional encodings once in log space.\n        pe = torch.zeros(max_len, d_model).float()\n        pe.require_grad = False\n        position = torch.arange(0, max_len).float().unsqueeze(1)\n        div_term = (torch.arange(0, d_model, 2).float()\n                    * -(math.log(10000.0) / d_model)).exp()\n        pe[:, 0::2] = torch.sin(position * div_term)",
+        "detail": "utils.layers",
         "documentation": {}
     },
     {
-        "label": "calculate_target_ADF",
-        "kind": 2,
-        "importPath": "utils.ADFtest",
-        "description": "utils.ADFtest",
-        "peekOfCode": "def calculate_target_ADF(root_path,data_path,target='OT'):\n    df_raw = pd.read_csv(os.path.join(root_path,data_path))\n    target_cols = target.split(',')\n    # df_data = df_raw[target]\n    df_raw = df_raw[target_cols]\n    adf_list = []\n    for i in target_cols:\n        df_data = df_raw[i]\n        adf = adfuller(df_data, maxlag = 1)\n        # print(adf)",
-        "detail": "utils.ADFtest",
+        "label": "TokenEmbedding",
+        "kind": 6,
+        "importPath": "utils.layers",
+        "description": "utils.layers",
+        "peekOfCode": "class TokenEmbedding(nn.Module):\n    def __init__(self, c_in, d_model):\n        super(TokenEmbedding, self).__init__()\n        padding = 1 if torch.__version__ >= '1.5.0' else 2\n        self.tokenConv = nn.Conv1d(in_channels=c_in, out_channels=d_model,\n                                   kernel_size=3, padding=padding, padding_mode='circular', bias=False)\n        for m in self.modules():\n            if isinstance(m, nn.Conv1d):\n                nn.init.kaiming_normal_(\n                    m.weight, mode='fan_in', nonlinearity='leaky_relu')",
+        "detail": "utils.layers",
         "documentation": {}
     },
     {
-        "label": "archADF",
-        "kind": 2,
-        "importPath": "utils.ADFtest",
-        "description": "utils.ADFtest",
-        "peekOfCode": "def archADF(root_path, data_path):\n    df = pd.read_csv(os.path.join(root_path,data_path))\n    cols = df.columns[1:]\n    stats = 0\n    for target_col in cols:\n        series = df[target_col].values\n        adf = ADF(series)\n        stat = adf.stat\n        stats += stat\n    return stats/len(cols)",
-        "detail": "utils.ADFtest",
+        "label": "FixedEmbedding",
+        "kind": 6,
+        "importPath": "utils.layers",
+        "description": "utils.layers",
+        "peekOfCode": "class FixedEmbedding(nn.Module):\n    def __init__(self, c_in, d_model):\n        super(FixedEmbedding, self).__init__()\n        w = torch.zeros(c_in, d_model).float()\n        w.require_grad = False\n        position = torch.arange(0, c_in).float().unsqueeze(1)\n        div_term = (torch.arange(0, d_model, 2).float()\n                    * -(math.log(10000.0) / d_model)).exp()\n        w[:, 0::2] = torch.sin(position * div_term)\n        w[:, 1::2] = torch.cos(position * div_term)",
+        "detail": "utils.layers",
         "documentation": {}
     },
     {
-        "label": "jitter",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def jitter(x, sigma=0.03):\n    # https://arxiv.org/pdf/1706.00527.pdf\n    return x + np.random.normal(loc=0., scale=sigma, size=x.shape)\ndef scaling(x, sigma=0.1):\n    # https://arxiv.org/pdf/1706.00527.pdf\n    factor = np.random.normal(loc=1., scale=sigma, size=(x.shape[0],x.shape[2]))\n    return np.multiply(x, factor[:,np.newaxis,:])\ndef rotation(x):\n    x = np.array(x)\n    flip = np.random.choice([-1, 1], size=(x.shape[0],x.shape[2]))",
-        "detail": "utils.augmentation",
+        "label": "TemporalEmbedding",
+        "kind": 6,
+        "importPath": "utils.layers",
+        "description": "utils.layers",
+        "peekOfCode": "class TemporalEmbedding(nn.Module):\n    def __init__(self, d_model, embed_type='fixed', freq='h'):\n        super(TemporalEmbedding, self).__init__()\n        minute_size = 4\n        hour_size = 24\n        weekday_size = 7\n        day_size = 32\n        month_size = 13\n        Embed = FixedEmbedding if embed_type == 'fixed' else nn.Embedding\n        if freq == 't':",
+        "detail": "utils.layers",
         "documentation": {}
     },
     {
-        "label": "scaling",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def scaling(x, sigma=0.1):\n    # https://arxiv.org/pdf/1706.00527.pdf\n    factor = np.random.normal(loc=1., scale=sigma, size=(x.shape[0],x.shape[2]))\n    return np.multiply(x, factor[:,np.newaxis,:])\ndef rotation(x):\n    x = np.array(x)\n    flip = np.random.choice([-1, 1], size=(x.shape[0],x.shape[2]))\n    rotate_axis = np.arange(x.shape[2])\n    np.random.shuffle(rotate_axis)\n    return flip[:,np.newaxis,:] * x[:,:,rotate_axis]",
-        "detail": "utils.augmentation",
+        "label": "TimeFeatureEmbedding",
+        "kind": 6,
+        "importPath": "utils.layers",
+        "description": "utils.layers",
+        "peekOfCode": "class TimeFeatureEmbedding(nn.Module):\n    def __init__(self, d_model, embed_type='timeF', freq='h'):\n        super(TimeFeatureEmbedding, self).__init__()\n        freq_map = {'h': 4, 't': 5, 's': 6,\n                    'm': 1, 'a': 1, 'w': 2, 'd': 3, 'b': 3}\n        d_inp = freq_map[freq]\n        self.embed = nn.Linear(d_inp, d_model, bias=False)\n    def forward(self, x):\n        return self.embed(x)\nclass DataEmbedding(nn.Module):",
+        "detail": "utils.layers",
         "documentation": {}
     },
     {
-        "label": "rotation",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def rotation(x):\n    x = np.array(x)\n    flip = np.random.choice([-1, 1], size=(x.shape[0],x.shape[2]))\n    rotate_axis = np.arange(x.shape[2])\n    np.random.shuffle(rotate_axis)\n    return flip[:,np.newaxis,:] * x[:,:,rotate_axis]\ndef permutation(x, max_segments=5, seg_mode=\"equal\"):\n    orig_steps = np.arange(x.shape[1])\n    num_segs = np.random.randint(1, max_segments, size=(x.shape[0]))\n    ret = np.zeros_like(x)",
-        "detail": "utils.augmentation",
+        "label": "DataEmbedding",
+        "kind": 6,
+        "importPath": "utils.layers",
+        "description": "utils.layers",
+        "peekOfCode": "class DataEmbedding(nn.Module):\n    def __init__(self, c_in, d_model, embed_type='fixed', freq='h', dropout=0.1):\n        super(DataEmbedding, self).__init__()\n        self.value_embedding = TokenEmbedding(c_in=c_in, d_model=d_model)\n        self.position_embedding = PositionalEmbedding(d_model=d_model)\n        self.temporal_embedding = TemporalEmbedding(d_model=d_model, embed_type=embed_type,\n                                                    freq=freq) if embed_type != 'timeF' else TimeFeatureEmbedding(\n            d_model=d_model, embed_type=embed_type, freq=freq)\n        self.dropout = nn.Dropout(p=dropout)\n    def forward(self, x, x_mark):",
+        "detail": "utils.layers",
         "documentation": {}
     },
     {
-        "label": "permutation",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def permutation(x, max_segments=5, seg_mode=\"equal\"):\n    orig_steps = np.arange(x.shape[1])\n    num_segs = np.random.randint(1, max_segments, size=(x.shape[0]))\n    ret = np.zeros_like(x)\n    for i, pat in enumerate(x):\n        if num_segs[i] > 1:\n            if seg_mode == \"random\":\n                split_points = np.random.choice(x.shape[1]-2, num_segs[i]-1, replace=False)\n                split_points.sort()\n                splits = np.split(orig_steps, split_points)",
-        "detail": "utils.augmentation",
+        "label": "moving_avg",
+        "kind": 6,
+        "importPath": "utils.layers",
+        "description": "utils.layers",
+        "peekOfCode": "class moving_avg(nn.Module):\n    \"\"\"\n    Moving average block to highlight the trend of time series\n    \"\"\"\n    def __init__(self, kernel_size, stride):\n        super(moving_avg, self).__init__()\n        self.kernel_size = kernel_size\n        self.avg = nn.AvgPool1d(kernel_size=kernel_size, stride=stride, padding=0)\n    def forward(self, x):\n        # padding on the both ends of time series",
+        "detail": "utils.layers",
         "documentation": {}
     },
     {
-        "label": "magnitude_warp",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def magnitude_warp(x, sigma=0.2, knot=4):\n    from scipy.interpolate import CubicSpline\n    orig_steps = np.arange(x.shape[1])\n    random_warps = np.random.normal(loc=1.0, scale=sigma, size=(x.shape[0], knot+2, x.shape[2]))\n    warp_steps = (np.ones((x.shape[2],1))*(np.linspace(0, x.shape[1]-1., num=knot+2))).T\n    ret = np.zeros_like(x)\n    for i, pat in enumerate(x):\n        warper = np.array([CubicSpline(warp_steps[:,dim], random_warps[i,:,dim])(orig_steps) for dim in range(x.shape[2])]).T\n        ret[i] = pat * warper\n    return ret",
-        "detail": "utils.augmentation",
+        "label": "series_decomp",
+        "kind": 6,
+        "importPath": "utils.layers",
+        "description": "utils.layers",
+        "peekOfCode": "class series_decomp(nn.Module):\n    \"\"\"\n    Series decomposition block\n    \"\"\"\n    def __init__(self, kernel_size):\n        super(series_decomp, self).__init__()\n        self.moving_avg = moving_avg(kernel_size, stride=1)\n    def forward(self, x):\n        moving_mean = self.moving_avg(x)\n        res = x - moving_mean",
+        "detail": "utils.layers",
         "documentation": {}
     },
     {
-        "label": "time_warp",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def time_warp(x, sigma=0.2, knot=4):\n    from scipy.interpolate import CubicSpline\n    orig_steps = np.arange(x.shape[1])\n    random_warps = np.random.normal(loc=1.0, scale=sigma, size=(x.shape[0], knot+2, x.shape[2]))\n    warp_steps = (np.ones((x.shape[2],1))*(np.linspace(0, x.shape[1]-1., num=knot+2))).T\n    ret = np.zeros_like(x)\n    for i, pat in enumerate(x):\n        for dim in range(x.shape[2]):\n            time_warp = CubicSpline(warp_steps[:,dim], warp_steps[:,dim] * random_warps[i,:,dim])(orig_steps)\n            scale = (x.shape[1]-1)/time_warp[-1]",
-        "detail": "utils.augmentation",
-        "documentation": {}
-    },
-    {
-        "label": "window_slice",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def window_slice(x, reduce_ratio=0.9):\n    # https://halshs.archives-ouvertes.fr/halshs-01357973/document\n    target_len = np.ceil(reduce_ratio*x.shape[1]).astype(int)\n    if target_len >= x.shape[1]:\n        return x\n    starts = np.random.randint(low=0, high=x.shape[1]-target_len, size=(x.shape[0])).astype(int)\n    ends = (target_len + starts).astype(int)\n    ret = np.zeros_like(x)\n    for i, pat in enumerate(x):\n        for dim in range(x.shape[2]):",
-        "detail": "utils.augmentation",
-        "documentation": {}
-    },
-    {
-        "label": "window_warp",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def window_warp(x, window_ratio=0.1, scales=[0.5, 2.]):\n    # https://halshs.archives-ouvertes.fr/halshs-01357973/document\n    warp_scales = np.random.choice(scales, x.shape[0])\n    warp_size = np.ceil(window_ratio*x.shape[1]).astype(int)\n    window_steps = np.arange(warp_size)\n    window_starts = np.random.randint(low=1, high=x.shape[1]-warp_size-1, size=(x.shape[0])).astype(int)\n    window_ends = (window_starts + warp_size).astype(int)\n    ret = np.zeros_like(x)\n    for i, pat in enumerate(x):\n        for dim in range(x.shape[2]):",
-        "detail": "utils.augmentation",
-        "documentation": {}
-    },
-    {
-        "label": "spawner",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def spawner(x, labels, sigma=0.05, verbose=0):\n    # https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6983028/\n    # use verbose=-1 to turn off warnings\n    # use verbose=1 to print out figures\n    import utils.dtw as dtw\n    random_points = np.random.randint(low=1, high=x.shape[1]-1, size=x.shape[0])\n    window = np.ceil(x.shape[1] / 10.).astype(int)\n    orig_steps = np.arange(x.shape[1])\n    l = np.argmax(labels, axis=1) if labels.ndim > 1 else labels\n    ret = np.zeros_like(x)",
-        "detail": "utils.augmentation",
-        "documentation": {}
-    },
-    {
-        "label": "wdba",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def wdba(x, labels, batch_size=6, slope_constraint=\"symmetric\", use_window=True, verbose=0):\n    # https://ieeexplore.ieee.org/document/8215569\n    # use verbose = -1 to turn off warnings    \n    # slope_constraint is for DTW. \"symmetric\" or \"asymmetric\"\n    x = np.array(x)\n    import utils.dtw as dtw\n    if use_window:\n        window = np.ceil(x.shape[1] / 10.).astype(int)\n    else:\n        window = None",
-        "detail": "utils.augmentation",
-        "documentation": {}
-    },
-    {
-        "label": "random_guided_warp",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def random_guided_warp(x, labels, slope_constraint=\"symmetric\", use_window=True, dtw_type=\"normal\", verbose=0):\n    # use verbose = -1 to turn off warnings\n    # slope_constraint is for DTW. \"symmetric\" or \"asymmetric\"\n    # dtw_type is for shapeDTW or DTW. \"normal\" or \"shape\"\n    import utils.dtw as dtw\n    if use_window:\n        window = np.ceil(x.shape[1] / 10.).astype(int)\n    else:\n        window = None\n    orig_steps = np.arange(x.shape[1])",
-        "detail": "utils.augmentation",
-        "documentation": {}
-    },
-    {
-        "label": "random_guided_warp_shape",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def random_guided_warp_shape(x, labels, slope_constraint=\"symmetric\", use_window=True):\n    return random_guided_warp(x, labels, slope_constraint, use_window, dtw_type=\"shape\")\ndef discriminative_guided_warp(x, labels, batch_size=6, slope_constraint=\"symmetric\", use_window=True, dtw_type=\"normal\", use_variable_slice=True, verbose=0):\n    # use verbose = -1 to turn off warnings\n    # slope_constraint is for DTW. \"symmetric\" or \"asymmetric\"\n    # dtw_type is for shapeDTW or DTW. \"normal\" or \"shape\"\n    import utils.dtw as dtw\n    if use_window:\n        window = np.ceil(x.shape[1] / 10.).astype(int)\n    else:",
-        "detail": "utils.augmentation",
-        "documentation": {}
-    },
-    {
-        "label": "discriminative_guided_warp",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def discriminative_guided_warp(x, labels, batch_size=6, slope_constraint=\"symmetric\", use_window=True, dtw_type=\"normal\", use_variable_slice=True, verbose=0):\n    # use verbose = -1 to turn off warnings\n    # slope_constraint is for DTW. \"symmetric\" or \"asymmetric\"\n    # dtw_type is for shapeDTW or DTW. \"normal\" or \"shape\"\n    import utils.dtw as dtw\n    if use_window:\n        window = np.ceil(x.shape[1] / 10.).astype(int)\n    else:\n        window = None\n    orig_steps = np.arange(x.shape[1])",
-        "detail": "utils.augmentation",
-        "documentation": {}
-    },
-    {
-        "label": "discriminative_guided_warp_shape",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def discriminative_guided_warp_shape(x, labels, batch_size=6, slope_constraint=\"symmetric\", use_window=True):\n    return discriminative_guided_warp(x, labels, batch_size, slope_constraint, use_window, dtw_type=\"shape\")\ndef run_augmentation(x, y, args):\n    print(\"Augmenting %s\"%args.data)\n    np.random.seed(args.seed)\n    x_aug = x\n    y_aug = y\n    if args.augmentation_ratio > 0:\n        augmentation_tags = \"%d\"%args.augmentation_ratio\n        for n in range(args.augmentation_ratio):",
-        "detail": "utils.augmentation",
-        "documentation": {}
-    },
-    {
-        "label": "run_augmentation",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def run_augmentation(x, y, args):\n    print(\"Augmenting %s\"%args.data)\n    np.random.seed(args.seed)\n    x_aug = x\n    y_aug = y\n    if args.augmentation_ratio > 0:\n        augmentation_tags = \"%d\"%args.augmentation_ratio\n        for n in range(args.augmentation_ratio):\n            x_temp, augmentation_tags = augment(x, y, args)\n            x_aug = np.append(x_aug, x_temp, axis=0)",
-        "detail": "utils.augmentation",
-        "documentation": {}
-    },
-    {
-        "label": "run_augmentation_single",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def run_augmentation_single(x, y, args):\n    # print(\"Augmenting %s\"%args.data)\n    np.random.seed(args.seed)\n    x_aug = x\n    y_aug = y\n    if args.augmentation_ratio > 0:\n        augmentation_tags = \"%d\"%args.augmentation_ratio\n        for n in range(args.augmentation_ratio):\n            x_temp, augmentation_tags = augment(x, y, args)\n            x_aug =x_temp",
-        "detail": "utils.augmentation",
-        "documentation": {}
-    },
-    {
-        "label": "augment",
-        "kind": 2,
-        "importPath": "utils.augmentation",
-        "description": "utils.augmentation",
-        "peekOfCode": "def augment(x, y, args):\n    import utils.augmentation as aug\n    augmentation_tags = \"\"\n    if args.jitter:\n        x = aug.jitter(x)\n        augmentation_tags += \"_jitter\"\n    if args.scaling:\n        x = aug.scaling(x)\n        augmentation_tags += \"_scaling\"\n    if args.rotation:",
-        "detail": "utils.augmentation",
-        "documentation": {}
-    },
-    {
-        "label": "dtw",
-        "kind": 2,
-        "importPath": "utils.dtw",
-        "description": "utils.dtw",
-        "peekOfCode": "def dtw(prototype, sample, return_flag = RETURN_VALUE, slope_constraint=\"asymmetric\", window=None):\n    \"\"\" Computes the DTW of two sequences.\n    :param prototype: np array [0..b]\n    :param sample: np array [0..t]\n    :param extended: bool\n    \"\"\"\n    p = prototype.shape[0]\n    assert p != 0, \"Prototype empty!\"\n    s = sample.shape[0]\n    assert s != 0, \"Sample empty!\"",
-        "detail": "utils.dtw",
-        "documentation": {}
-    },
-    {
-        "label": "shape_dtw",
-        "kind": 2,
-        "importPath": "utils.dtw",
-        "description": "utils.dtw",
-        "peekOfCode": "def shape_dtw(prototype, sample, return_flag = RETURN_VALUE, slope_constraint=\"asymmetric\", window=None, descr_ratio=0.05):\n    \"\"\" Computes the shapeDTW of two sequences.\n    :param prototype: np array [0..b]\n    :param sample: np array [0..t]\n    :param extended: bool\n    \"\"\"\n    # shapeDTW\n    # https://www.sciencedirect.com/science/article/pii/S0031320317303710\n    p = prototype.shape[0]\n    assert p != 0, \"Prototype empty!\"",
-        "detail": "utils.dtw",
-        "documentation": {}
-    },
-    {
-        "label": "draw_graph2d",
-        "kind": 2,
-        "importPath": "utils.dtw",
-        "description": "utils.dtw",
-        "peekOfCode": "def draw_graph2d(cost, DTW, path, prototype, sample):\n    import matplotlib.pyplot as plt\n    plt.figure(figsize=(12, 8))\n   # plt.subplots_adjust(left=.02, right=.98, bottom=.001, top=.96, wspace=.05, hspace=.01)\n    #cost\n    plt.subplot(2, 3, 1)\n    plt.imshow(cost.T, cmap=plt.cm.gray, interpolation='none', origin='lower')\n    plt.plot(path[0], path[1], 'y')\n    plt.xlim((-0.5, cost.shape[0]-0.5))\n    plt.ylim((-0.5, cost.shape[0]-0.5))",
-        "detail": "utils.dtw",
-        "documentation": {}
-    },
-    {
-        "label": "draw_graph1d",
-        "kind": 2,
-        "importPath": "utils.dtw",
-        "description": "utils.dtw",
-        "peekOfCode": "def draw_graph1d(cost, DTW, path, prototype, sample):\n    import matplotlib.pyplot as plt\n    plt.figure(figsize=(12, 8))\n   # plt.subplots_adjust(left=.02, right=.98, bottom=.001, top=.96, wspace=.05, hspace=.01)\n    p_steps = np.arange(prototype.shape[0])\n    s_steps = np.arange(sample.shape[0])\n    #cost\n    plt.subplot(2, 3, 1)\n    plt.imshow(cost.T, cmap=plt.cm.gray, interpolation='none', origin='lower')\n    plt.plot(path[0], path[1], 'y')",
-        "detail": "utils.dtw",
-        "documentation": {}
-    },
-    {
-        "label": "__author__",
-        "kind": 5,
-        "importPath": "utils.dtw",
-        "description": "utils.dtw",
-        "peekOfCode": "__author__ = 'Brian Iwana'\nimport numpy as np\nimport math\nimport sys\nRETURN_VALUE = 0\nRETURN_PATH = 1\nRETURN_ALL = -1\n# Core DTW\ndef _traceback(DTW, slope_constraint):\n    i, j = np.array(DTW.shape) - 1",
-        "detail": "utils.dtw",
-        "documentation": {}
-    },
-    {
-        "label": "RETURN_VALUE",
-        "kind": 5,
-        "importPath": "utils.dtw",
-        "description": "utils.dtw",
-        "peekOfCode": "RETURN_VALUE = 0\nRETURN_PATH = 1\nRETURN_ALL = -1\n# Core DTW\ndef _traceback(DTW, slope_constraint):\n    i, j = np.array(DTW.shape) - 1\n    p, q = [i-1], [j-1]\n    if slope_constraint == \"asymmetric\":\n        while (i > 1):\n            tb = np.argmin((DTW[i-1, j], DTW[i-1, j-1], DTW[i-1, j-2]))",
-        "detail": "utils.dtw",
-        "documentation": {}
-    },
-    {
-        "label": "RETURN_PATH",
-        "kind": 5,
-        "importPath": "utils.dtw",
-        "description": "utils.dtw",
-        "peekOfCode": "RETURN_PATH = 1\nRETURN_ALL = -1\n# Core DTW\ndef _traceback(DTW, slope_constraint):\n    i, j = np.array(DTW.shape) - 1\n    p, q = [i-1], [j-1]\n    if slope_constraint == \"asymmetric\":\n        while (i > 1):\n            tb = np.argmin((DTW[i-1, j], DTW[i-1, j-1], DTW[i-1, j-2]))\n            if (tb == 0):",
-        "detail": "utils.dtw",
-        "documentation": {}
-    },
-    {
-        "label": "RETURN_ALL",
-        "kind": 5,
-        "importPath": "utils.dtw",
-        "description": "utils.dtw",
-        "peekOfCode": "RETURN_ALL = -1\n# Core DTW\ndef _traceback(DTW, slope_constraint):\n    i, j = np.array(DTW.shape) - 1\n    p, q = [i-1], [j-1]\n    if slope_constraint == \"asymmetric\":\n        while (i > 1):\n            tb = np.argmin((DTW[i-1, j], DTW[i-1, j-1], DTW[i-1, j-2]))\n            if (tb == 0):\n                i = i - 1",
-        "detail": "utils.dtw",
-        "documentation": {}
-    },
-    {
-        "label": "dtw",
-        "kind": 2,
-        "importPath": "utils.dtw_metric",
-        "description": "utils.dtw_metric",
-        "peekOfCode": "def dtw(x, y, dist, warp=1, w=inf, s=1.0):\n    \"\"\"\n    Computes Dynamic Time Warping (DTW) of two sequences.\n    :param array x: N1*M array\n    :param array y: N2*M array\n    :param func dist: distance used as cost measure\n    :param int warp: how many shifts are computed.\n    :param int w: window size limiting the maximal distance between indices of matched entries |i,j|.\n    :param float s: weight applied on off-diagonal moves of the path. As s gets larger, the warping path is increasingly biased towards the diagonal\n    Returns the minimum distance, the cost matrix, the accumulated cost matrix, and the wrap path.",
-        "detail": "utils.dtw_metric",
-        "documentation": {}
-    },
-    {
-        "label": "accelerated_dtw",
-        "kind": 2,
-        "importPath": "utils.dtw_metric",
-        "description": "utils.dtw_metric",
-        "peekOfCode": "def accelerated_dtw(x, y, dist, warp=1):\n    \"\"\"\n    Computes Dynamic Time Warping (DTW) of two sequences in a faster way.\n    Instead of iterating through each element and calculating each distance,\n    this uses the cdist function from scipy (https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.cdist.html)\n    :param array x: N1*M array\n    :param array y: N2*M array\n    :param string or func dist: distance parameter for cdist. When string is given, cdist uses optimized functions for the distance metrics.\n    If a string is passed, the distance function can be 'braycurtis', 'canberra', 'chebyshev', 'cityblock', 'correlation', 'cosine', 'dice', 'euclidean', 'hamming', 'jaccard', 'kulsinski', 'mahalanobis', 'matching', 'minkowski', 'rogerstanimoto', 'russellrao', 'seuclidean', 'sokalmichener', 'sokalsneath', 'sqeuclidean', 'wminkowski', 'yule'.\n    :param int warp: how many shifts are computed.",
-        "detail": "utils.dtw_metric",
+        "label": "series_decomp_multi",
+        "kind": 6,
+        "importPath": "utils.layers",
+        "description": "utils.layers",
+        "peekOfCode": "class series_decomp_multi(nn.Module):\n    \"\"\"\n    Multiple Series decomposition block from FEDformer\n    \"\"\"\n    def __init__(self, kernel_size):\n        super(series_decomp_multi, self).__init__()\n        self.kernel_size = kernel_size\n        self.series_decomp = [series_decomp(kernel) for kernel in kernel_size]\n    def forward(self, x):\n        moving_mean = []",
+        "detail": "utils.layers",
         "documentation": {}
     },
     {
@@ -1072,87 +720,6 @@
         "description": "utils.tools",
         "peekOfCode": "def cal_accuracy(y_pred, y_true):\n    return np.mean(y_pred == y_true)",
         "detail": "utils.tools",
-        "documentation": {}
-    },
-    {
-        "label": "PositionalEmbedding",
-        "kind": 6,
-        "importPath": "layers",
-        "description": "layers",
-        "peekOfCode": "class PositionalEmbedding(nn.Module):\n    def __init__(self, d_model, max_len=5000):\n        super(PositionalEmbedding, self).__init__()\n        # Compute the positional encodings once in log space.\n        pe = torch.zeros(max_len, d_model).float()\n        pe.require_grad = False\n        position = torch.arange(0, max_len).float().unsqueeze(1)\n        div_term = (torch.arange(0, d_model, 2).float()\n                    * -(math.log(10000.0) / d_model)).exp()\n        pe[:, 0::2] = torch.sin(position * div_term)",
-        "detail": "layers",
-        "documentation": {}
-    },
-    {
-        "label": "TokenEmbedding",
-        "kind": 6,
-        "importPath": "layers",
-        "description": "layers",
-        "peekOfCode": "class TokenEmbedding(nn.Module):\n    def __init__(self, c_in, d_model):\n        super(TokenEmbedding, self).__init__()\n        padding = 1 if torch.__version__ >= '1.5.0' else 2\n        self.tokenConv = nn.Conv1d(in_channels=c_in, out_channels=d_model,\n                                   kernel_size=3, padding=padding, padding_mode='circular', bias=False)\n        for m in self.modules():\n            if isinstance(m, nn.Conv1d):\n                nn.init.kaiming_normal_(\n                    m.weight, mode='fan_in', nonlinearity='leaky_relu')",
-        "detail": "layers",
-        "documentation": {}
-    },
-    {
-        "label": "FixedEmbedding",
-        "kind": 6,
-        "importPath": "layers",
-        "description": "layers",
-        "peekOfCode": "class FixedEmbedding(nn.Module):\n    def __init__(self, c_in, d_model):\n        super(FixedEmbedding, self).__init__()\n        w = torch.zeros(c_in, d_model).float()\n        w.require_grad = False\n        position = torch.arange(0, c_in).float().unsqueeze(1)\n        div_term = (torch.arange(0, d_model, 2).float()\n                    * -(math.log(10000.0) / d_model)).exp()\n        w[:, 0::2] = torch.sin(position * div_term)\n        w[:, 1::2] = torch.cos(position * div_term)",
-        "detail": "layers",
-        "documentation": {}
-    },
-    {
-        "label": "TemporalEmbedding",
-        "kind": 6,
-        "importPath": "layers",
-        "description": "layers",
-        "peekOfCode": "class TemporalEmbedding(nn.Module):\n    def __init__(self, d_model, embed_type='fixed', freq='h'):\n        super(TemporalEmbedding, self).__init__()\n        minute_size = 4\n        hour_size = 24\n        weekday_size = 7\n        day_size = 32\n        month_size = 13\n        Embed = FixedEmbedding if embed_type == 'fixed' else nn.Embedding\n        if freq == 't':",
-        "detail": "layers",
-        "documentation": {}
-    },
-    {
-        "label": "TimeFeatureEmbedding",
-        "kind": 6,
-        "importPath": "layers",
-        "description": "layers",
-        "peekOfCode": "class TimeFeatureEmbedding(nn.Module):\n    def __init__(self, d_model, embed_type='timeF', freq='h'):\n        super(TimeFeatureEmbedding, self).__init__()\n        freq_map = {'h': 4, 't': 5, 's': 6,\n                    'm': 1, 'a': 1, 'w': 2, 'd': 3, 'b': 3}\n        d_inp = freq_map[freq]\n        self.embed = nn.Linear(d_inp, d_model, bias=False)\n    def forward(self, x):\n        return self.embed(x)\nclass DataEmbedding(nn.Module):",
-        "detail": "layers",
-        "documentation": {}
-    },
-    {
-        "label": "DataEmbedding",
-        "kind": 6,
-        "importPath": "layers",
-        "description": "layers",
-        "peekOfCode": "class DataEmbedding(nn.Module):\n    def __init__(self, c_in, d_model, embed_type='fixed', freq='h', dropout=0.1):\n        super(DataEmbedding, self).__init__()\n        self.value_embedding = TokenEmbedding(c_in=c_in, d_model=d_model)\n        self.position_embedding = PositionalEmbedding(d_model=d_model)\n        self.temporal_embedding = TemporalEmbedding(d_model=d_model, embed_type=embed_type,\n                                                    freq=freq) if embed_type != 'timeF' else TimeFeatureEmbedding(\n            d_model=d_model, embed_type=embed_type, freq=freq)\n        self.dropout = nn.Dropout(p=dropout)\n    def forward(self, x, x_mark):",
-        "detail": "layers",
-        "documentation": {}
-    },
-    {
-        "label": "moving_avg",
-        "kind": 6,
-        "importPath": "layers",
-        "description": "layers",
-        "peekOfCode": "class moving_avg(nn.Module):\n    \"\"\"\n    Moving average block to highlight the trend of time series\n    \"\"\"\n    def __init__(self, kernel_size, stride):\n        super(moving_avg, self).__init__()\n        self.kernel_size = kernel_size\n        self.avg = nn.AvgPool1d(kernel_size=kernel_size, stride=stride, padding=0)\n    def forward(self, x):\n        # padding on the both ends of time series",
-        "detail": "layers",
-        "documentation": {}
-    },
-    {
-        "label": "series_decomp",
-        "kind": 6,
-        "importPath": "layers",
-        "description": "layers",
-        "peekOfCode": "class series_decomp(nn.Module):\n    \"\"\"\n    Series decomposition block\n    \"\"\"\n    def __init__(self, kernel_size):\n        super(series_decomp, self).__init__()\n        self.moving_avg = moving_avg(kernel_size, stride=1)\n    def forward(self, x):\n        moving_mean = self.moving_avg(x)\n        res = x - moving_mean",
-        "detail": "layers",
-        "documentation": {}
-    },
-    {
-        "label": "series_decomp_multi",
-        "kind": 6,
-        "importPath": "layers",
-        "description": "layers",
-        "peekOfCode": "class series_decomp_multi(nn.Module):\n    \"\"\"\n    Multiple Series decomposition block from FEDformer\n    \"\"\"\n    def __init__(self, kernel_size):\n        super(series_decomp_multi, self).__init__()\n        self.kernel_size = kernel_size\n        self.series_decomp = [series_decomp(kernel) for kernel in kernel_size]\n    def forward(self, x):\n        moving_mean = []",
-        "detail": "layers",
         "documentation": {}
     }
 ]

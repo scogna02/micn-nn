@@ -68,7 +68,7 @@
                 "--is_training",
                 "1",
                 "--root_path",
-                "/home/matteo/projects/NN/micn-nn",
+                "/home/matteo/projects/NN/micn-nn/data",
                 "--data_path",
                 "weather.csv",
                 "--model_id",

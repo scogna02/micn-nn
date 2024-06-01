@@ -4,3 +4,6 @@ mse:0.12711292505264282, mae:0.2528110146522522
 imputation_ETTh1_96_96_MICN_ETTh1_ftM_sl96_ll0_pl96_dm64_nh8_el2_dl1_df64_fc3_ebtimeF_dtTrue_Exp_0  
 mse:0.11575982719659805, mae:0.24367107450962067
 
+imputation_ETTh1_96_96_MICN_ETTh1_ftMS_sl96_ll0_pl96_dm64_nh8_el2_dl1_df64_fc3_ebtimeF_dtTrue_Exp_0  
+mse:0.021044021472334862, mae:0.10664106160402298
+
